@@ -1,0 +1,136 @@
+.navigation {
+    position: relative;
+    display: block;
+    padding: 2rem 2rem;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 7rem;
+    top: 0;
+    border-bottom: solid 2px $primary-color;
+    background-color: #fff;
+
+    @include respond(tab-port) {
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+       padding-top: 2.5rem;
+    }
+    
+
+    &__left {
+        list-style: none;
+        display: flex;
+        font-size: 1.5rem;
+        float: left;
+        // @include clearfix;
+    }
+
+
+    &__link {
+        text-decoration: none;
+        color: $primary-color;
+        padding: 2.5rem;
+
+        @include respond(tab-port) {
+            display: none;
+            overflow: hidden;
+        }
+    }
+
+    &__right {
+        list-style: none;
+        display: flex;
+        font-size: 1.5rem;
+        float: right;
+
+        &__link {
+            text-decoration: none;
+            color: $primary-color;
+            padding: 1rem 1.5rem;
+            margin-left: 2rem;
+            border: 1px solid $color-green-dark;
+            border-radius: 5rem;
+            transition: all .2s;
+
+            @include respond(tab-port) {
+                display: none;
+                overflow: hidden;
+            }
+
+            &:hover {
+                background-color: $primary-color;
+                color: $color-white;
+                
+            }
+        }
+
+        
+    }
+
+}
+
+.open-slide {
+    float: right;
+    display: none;
+    
+
+    @include respond(tab-port) {
+        margin-top: .2rem;
+        display: block;
+    }
+}
+
+.mobile-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+
+    &__list {
+        text-align: center;
+        
+    }
+
+    &__item {
+        margin-bottom: 2rem;
+    }
+
+    &__item2 {
+        margin: auto;
+        margin-bottom: 2rem;
+        border: 2px solid $primary-color;
+        width: 12rem;
+        list-style: none;
+        border-radius: 10px;
+    }
+
+
+    &__link {
+        font-size: 2.2rem;
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    &__link2 {
+        font-size: 2.2rem;
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+.mobile-nav .btn-close{
+    position:absolute;
+    color: $primary-color;
+    top: 0;
+    right: 22px;
+    font-size: 3.6rem;
+    margin-left:50px;
+}

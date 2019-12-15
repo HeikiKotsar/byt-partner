@@ -1,0 +1,132 @@
+.property {
+    &__nav {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        font-size: 1.6rem;
+        background-color: #fff;
+    
+        .active {
+            a {
+                color: $primary-color;
+            }   
+        }
+
+        a {
+            text-decoration: none;
+            color: darkgray;
+            padding: 1.5rem;
+            display: inline-block;
+            
+            text-align: center;
+        }
+    }
+}
+
+.property-container {
+    width: 60%;
+    margin: 5rem auto;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
+    // border: 1px solid $color-grey-dark-3;
+}
+
+.property-header {
+    padding: 1.5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 2px solid $primary-color;
+
+    &--1 {
+        margin-right: auto;
+    }
+}
+
+.property-body {
+    padding: 1.5rem;
+    background: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.property-item {
+
+     &__head {
+         display: flex;
+         align-items: center;
+         margin-bottom: 0.5rem;
+     }
+
+     &__container {
+         width: 30%;
+         margin-left: 10%;
+
+        .room-list {
+            background-color: $color-grey-light-2;
+            border-radius: 10px;
+        }
+
+         .room__item {
+            display: flex;
+            padding: 0.5rem;
+            font-size: 1.4rem;
+
+            &--text {
+                margin-right: auto;
+            }
+        }
+
+        .room-desc {
+            margin: 1rem 0;
+            font-size: 1.4rem;
+        }
+     }
+
+     
+
+
+     .change-btn {
+         margin-left: auto;
+         border: 1.5px solid $color-grey-light-2;
+         cursor: pointer;
+         width: 2rem;
+         background-color: #fff;
+
+         &:hover {
+            background-color: $color-grey-light-2;
+         }
+     }
+}
+
+
+// Spordirajatised
+
+.sports {
+    display: flex;
+    align-items: center;
+    margin-top: .3rem;
+}
+
+.sport-head {
+    font-size: 1.4rem;
+    background-color: $color-grey-light-2;
+    padding: .2rem;
+    border-radius: 5px;
+    margin-right: .2rem;
+}
+
+.sport-list {
+    display: flex;
+}
+
+.sport-item {
+    font-size: 1.4rem;
+    padding: .2rem;
+    background-color: $color-grey-light-2;
+    border-radius: 5px;
+    margin-right: .2rem;
+}
+    

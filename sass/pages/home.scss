@@ -1,0 +1,135 @@
+.section-sign-up {
+    
+    height: 100vh;
+    background-image: linear-gradient(
+        to right top, 
+        rgba($color-grey-dark-2, 0.8), 
+        rgba($color-grey-dark-3, 0.8)), 
+        url(../img/partner-land.jpg);
+    background-size: cover;
+    // background-position: top;
+    
+    @include respond(phone) {
+        height: 95vh;
+        
+     }
+    
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30%;
+        height: 100vh;
+        background-color: $primary-color;
+        opacity: 0.7;
+
+        @include respond(phone) {
+            height: 95vh;
+            
+         }
+    }
+}
+
+.section-login {
+    
+    height: 100vh;
+    background-image: linear-gradient(
+        to right top, 
+        rgba($color-grey-dark-2, 0.8), 
+        rgba($color-grey-dark-3, 0.8)), 
+        url(../img/partner-land.jpg);
+    background-size: cover;
+    // background-position: top;
+    
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     right: 0;
+    //     width: 30%;
+    //     height: 100vh;
+    //     background-color: $primary-color;
+    //     opacity: 0.7;
+    // }
+}
+
+.section-partner {
+    background-color: $color-grey-light-2;
+    padding: 10rem 0;
+
+    @include respond(phone) {
+        padding: 5rem 0;  
+    }
+}
+
+
+
+.section-prices {
+    background-color: $color-grey-light-2;
+    padding: 10rem 0;
+
+    @include respond(phone) {
+        padding: 5rem 0;  
+    }
+}
+
+.section-work {
+    background-color: $color-grey-light-2;
+    padding: 10rem 0;
+
+    @include respond(phone) {
+        padding: 5rem 0;  
+    }
+}
+
+.section-faq {
+    background-color: $color-grey-light-2;
+    padding: 5rem 0;
+}
+
+.section-book {
+    background-color: $color-grey-light-2;
+    padding: 10rem 0;
+}
+
+.section-register {
+    background-color: $color-grey-light-2;
+    padding: 10rem 0;
+   
+}
+
+////////////////////////////////////////////
+// PARTNER INFO
+
+.info {
+    padding: 1rem;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    @include respond(tab-port) {
+        flex-wrap: wrap;
+    }
+
+
+    &__box {
+        padding: 4rem;
+        margin: 3rem;
+        width: 50rem;
+    }
+
+    &__img {
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+

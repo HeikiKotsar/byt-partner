@@ -96,7 +96,7 @@
             <div class="property">
                     <ul id="nav-tab" class="property__nav">
                         <li class="active"><a href="#majutus">Majutus</a></li>
-                        <li><a href="#toitlustus">Toitlusuts</a></li>
+                        <li><a href="#toitlustus">Keskuse kirjeldus</a></li>
                         <li><a href="#spordirajatised">Spordirajatised</a></li>
                         <li><a href="#teenused">Teenused</a></li>
                         <li><a href="#paketid">Paketid</a></li>
@@ -144,10 +144,57 @@
                             </form>
                     </div>
                     <div class="tab-pane" id="toitlustus">
-                       2
+                       <from class="property__content-2">
+                           <div class="centre__container">
+                               <div class="centre">
+                                   <div class="centre__text">
+                                       <h2 class="heading-tertiary">Kirjeldus kliendile spordikeskusest, asutusest ja ümbruskonnas</h2>
+                                       <p class="paragraph">Seda kirjeldust, näeb klient, kes teie spordikeskust vaatab meie platvormil. Selle eesmärk on anda kliendile võimalikult hea ülevaade teie spordikeskusest. Mida parem on kirjeldus, seda suurem tõenäosusega, sooritatakse broneering teie keskusesse.</p>
+                                   </div>
+                                   <div class="centre__desc">
+                                        <textarea class="centre__textarea" name="text" id="" cols="64" rows="10"></textarea>
+                                        <button class="centre__btn"> &#9998; </button>
+                                   </div>
+                               </div>
+
+                               <div class="centre u-margin-top-small">
+                                    <div class="centre__text">
+                                        <h2 class="heading-tertiary">Info toitlustuse kohta</h2>
+                                        <p class="paragraph">Millised on teie võimalused seotud toitlustusega, kas on kindlad kellaajad, kas toitlust on paketis sees jne.</p>
+                                    </div>
+                                    <div class="centre__desc">
+                                        <textarea class="centre__textarea" name="text" id="" cols="64" rows="10"></textarea>
+                                        <button class="centre__btn"> &#9998; </button>
+                                    </div>
+                                </div>
+
+                                <div class="centre u-margin-top-small">
+                                    <div class="centre__text">
+                                        <h2 class="heading-tertiary">Lisage pilte enda keskusest</h2>
+                                        <p class="paragraph">Esimene pilt keskusest on teie “profiili” pilt, mida klient näeb, kui ta otsib platvormil erinevaid keskusi, kus enda üritust pidada. Teine tuleb esimesena esile, kui klient klõpsab teie spordikeskusele. Ülejäänud pildid on nähtaval, kui klient tahab teie spordirajatiste ja tubade kohta pilte näha.</p>
+                                    </div>
+                                    <div class="centre__desc">
+                                        <div class="centre__images1">
+                                            <div class="centre__profile">
+                                                <p class="paragraph">Profile</p>
+                                                <img src="img/images.png"  alt="image">
+                                            </div>
+                                            <div class="centre__firstlook">
+                                                <p class="paragraph">First look</p>
+                                                <img src="img/images.png"  alt="image">
+                                            </div>
+                                        </div>
+                                        <div class="centre__images2">
+                                            <p class="paragraph">Pildid, mis annavad kliendile teie keskusest hea ülevaate</p>
+                                            <img src="img/images.png"  alt="image">
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </from>
                     </div>
                     <div class="tab-pane" id="spordirajatised">
-                        <form class="property__content-2">
+                        <form class="property__content-3">
                                 <div class="property-container">
                                     <div class="property-header">
                                         <h2 class="property-header--1">Spordirajatis: Pallimangude saal</h2>
@@ -194,6 +241,95 @@
                                     <button class="btn--green btn--2">&#43; Add new sport facility</button>
                                 </div>
                         </form>
+                    </div>
+                    <div class="tab-pane" id="paketid">
+                            <div class="package__container">
+                                <div class="package">
+                                    <div class="package__item">
+                                        <div class="package__head">
+                                            <h2>Paket 1</h2>
+                                            <input class="switchbutton" type="checkbox" name="on">
+                                        </div>
+                                        <div class="package__body">
+                                            <button class="package__btn"> &#9998; </button>
+                                            <div class="package__content">
+                                                <h2>Majutusasutus</h2>
+                                                <p class="package__detail paragraph">Hotell (kaheinimese tuba, 33)</p>
+                                            </div>
+                                            <div class="package__content">
+                                                <h2>Spordirajatis</h2>
+                                                <p class="package__detail paragraph">Pallimängude saal</p>
+                                            </div>
+                                            <div class="package__content">
+                                                <h2>Lisateenused</h2>
+                                                <p class="package__detail paragraph">Saun</p>
+                                            </div>
+                                            <div class="package__content--2">
+                                                <h2>Hind</h2>
+                                                <p class="package__cost paragraph">20$</p>
+                                                <p class="paragraph">/inimene/päev/</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="package__item">
+                                        <div class="package__head">
+                                            <h2>Paket 2</h2>
+                                            <input class="switchbutton" type="checkbox" name="on">
+                                        </div>
+                                        <div class="package__body">
+                                            <button class="package__btn"> &#9998; </button>
+                                            <div class="package__content">
+                                                <h2>Majutusasutus</h2>
+                                                <p class="package__detail paragraph">Hotell (kaheinimese tuba, 33)</p>
+                                            </div>
+                                            <div class="package__content">
+                                                <h2>Spordirajatis</h2>
+                                                <p class="package__detail paragraph">Korvpalli saal</p>
+                                            </div>
+                                            <div class="package__content">
+                                                <h2>Lisateenused</h2>
+                                                <p class="package__detail paragraph">Saun</p>
+                                            </div>
+                                            <div class="package__content--2">
+                                                <h2>Hind</h2>
+                                                <p class="package__cost paragraph">25$</p>
+                                                <p class="paragraph">/inimene/päev/</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="package__item">
+                                        <div class="package__head">
+                                            <h2>Paket 3</h2>
+                                        </div>
+                                        <div class="package__body">
+                                            <form class="property__content-5">
+                                                <div class="package__group">
+                                                    <label class="paragraph">Lisa Majutusasutus</label>
+                                                    <input class="package__group--input" type="text">
+                                                </div>
+                                                <div class="package__group">
+                                                    <label class="paragraph">Lisa Spordirajatis</label>
+                                                    <input class="package__group--input" type="text">
+                                                </div>
+                                                <div class="package__group">
+                                                    <label class="paragraph">Lisateenused</label>
+                                                    <input class="package__group--input" type="text">
+                                                </div>
+                                                <div class="package__group">
+                                                    <label class="paragraph">Hind</label>
+                                                    <input class="package__group--input" type="number">
+                                                </div>
+                                                <button class="btn--green btn--2">&#43; Add</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="u-center-text u-margin-bottom-big">
+                                <button class="btn--green btn--2">&#43; Add new package</button>
+                            </div>
                     </div>
             </div>
         </div>

@@ -5,11 +5,6 @@
 [1200 - 1800] is where our normal styles apply
 1800 +: Big desktop
 */
-
-a:hover {
-  cursor:pointer;
-}
-
 .scroll {
   position: absolute;
   top: 90%;
@@ -333,7 +328,8 @@ input[type="checkbox"] {
   background: #c6c6c6;
   outline: none;
   border-radius: 2rem;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); }
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
 
 input:checked[type="checkbox"] {
   background: #2998ff; }
@@ -407,6 +403,15 @@ input:checked[type="checkbox"]:before {
 .register {
   max-width: 105rem;
   margin: auto;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem; }
+
+.register-last {
+  max-width: 105rem;
+  margin: 12rem auto;
+  padding: 6rem 0rem;
   align-items: center;
   background-color: #fff;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.5);
@@ -655,7 +660,8 @@ header {
   align-items: center; }
 
 .content {
-  display: flex; }
+  display: flex;
+  height: 100%; }
 
 .sidebar {
   background-color: #333;
@@ -757,7 +763,7 @@ header {
 
 .property-container {
   width: 60%;
-  margin: 5rem auto;
+  margin: 8rem auto;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.3); }
 
 .property-header {
@@ -807,6 +813,60 @@ header {
   .property-item .change-btn:hover {
     background-color: #eee; }
 
+.centre__container {
+  width: 100rem;
+  margin: auto;
+  padding: 5rem 0; }
+
+.centre {
+  display: flex; }
+  .centre__text {
+    flex: 0 0 45%;
+    margin-right: 3rem; }
+  .centre__desc {
+    flex: 1;
+    position: relative; }
+  .centre__textarea {
+    position: relative;
+    width: 100%;
+    padding-top: 3.5rem;
+    height: 25rem;
+    border-radius: 5px;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1); }
+  .centre__btn {
+    position: absolute;
+    margin-top: 1rem;
+    margin-left: -3rem;
+    border: 1.5px solid #eee;
+    width: 2rem;
+    background-color: #fff;
+    cursor: pointer; }
+    .centre__btn:hover {
+      background-color: #eee; }
+  .centre__images1 {
+    display: flex;
+    text-align: center; }
+  .centre__profile {
+    flex: 0 0 30%;
+    background-color: #fff;
+    margin-right: 2rem;
+    border-radius: 5px;
+    padding: 1rem 0rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1); }
+  .centre__firstlook {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem 0rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1); }
+  .centre__images2 {
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem 0rem;
+    text-align: center;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1); }
+
 .sports {
   display: flex;
   align-items: center;
@@ -828,6 +888,122 @@ header {
   background-color: #eee;
   border-radius: 5px;
   margin-right: .2rem; }
+
+.package__container {
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.package {
+  grid-column: center-start / center-end;
+  margin: 7rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-gap: 7rem; }
+  .package__item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .package__btn {
+    float: right;
+    margin-left: auto;
+    border: 1.5px solid #eee;
+    cursor: pointer;
+    width: 2rem;
+    background-color: #fff; }
+    .package__btn:hover {
+      background-color: #eee; }
+  .package__head {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #2998ff;
+    padding: 1rem 1.5rem; }
+    .package__head h2 {
+      margin-right: auto; }
+  .package__body {
+    padding: 1rem 1.5rem; }
+  .package .package__content--2 {
+    display: flex;
+    align-items: center; }
+    .package .package__content--2 h2 {
+      margin-right: 1rem; }
+  .package__detail {
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem; }
+  .package__cost {
+    background-color: #eee;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: 8rem;
+    text-align: center;
+    margin-right: 1rem; }
+  .package__group label {
+    display: block; }
+  .package__group--input {
+    font-size: 1.6rem;
+    padding: .7rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee; }
+  .package__hind {
+    width: 20rem; }
+
+.company-container {
+  margin: auto;
+  width: 100rem;
+  padding: 5rem 0rem; }
+
+.company__contact {
+  width: 45rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  margin: 2rem; }
+
+.company__head {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid #2998ff; }
+  .company__head h2 {
+    margin-right: auto; }
+
+.company__body {
+  padding: 1rem 1.5rem; }
+
+.company__group {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem; }
+
+.company__label {
+  margin-right: auto;
+  font-size: 1.5rem; }
+
+.company__input {
+  font-size: 1.5rem;
+  padding: .7rem;
+  width: 25rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee; }
+  .company__input--1 {
+    width: 40rem;
+    font-size: 1.5rem;
+    padding: .7rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee; }
+
+.company__detail {
+  width: 70rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 2rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1); }
 
 .footer {
   background-color: #333;

@@ -1,0 +1,70 @@
+.company-container {
+    margin: auto;
+    width: 100rem;
+    padding: 5rem 0rem;
+}
+
+.company {
+    
+
+    &__contact {
+        width: 45rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .1);
+        margin: 2rem;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        border-bottom: 2px solid $primary-color;
+
+        h2 {
+            margin-right: auto;
+        }
+    }
+
+    &__body {
+        
+        padding: 1rem 1.5rem;
+    }
+
+    &__group {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    &__label {
+        margin-right: auto;
+        font-size: 1.5rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: .7rem;
+        width: 25rem;
+        border-radius: 5px;
+        border: none;
+        background-color: #eee;
+
+        &--1 {
+            width: 40rem;
+            font-size: 1.5rem;
+            padding: .7rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+        }
+    }
+
+    &__detail {
+        width: 70rem;
+        background-color: #fff;
+        border-radius: 1rem;
+        margin: 2rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .1);
+    }
+}

@@ -25,7 +25,7 @@
 
 .property-container {
     width: 60%;
-    margin: 5rem auto;
+    margin: 8rem auto;
     box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
     // border: 1px solid $color-grey-dark-3;
 }
@@ -101,6 +101,82 @@
      }
 }
 
+// Keskuse kirjeldus
+
+.centre__container {
+    width: 100rem;
+    margin: auto;
+    padding: 5rem 0;
+}
+
+.centre {
+    display: flex;
+
+    &__text {
+        flex: 0 0 45%;
+        margin-right: 3rem;
+    }
+
+    &__desc {
+        flex: 1;
+        position: relative;
+    }
+
+    &__textarea {
+        position: relative;
+        width: 100%;
+        padding-top: 3.5rem;
+        height: 25rem;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 3rem rgba(0,0,0,.1);
+    }
+
+    &__btn {
+        position: absolute;
+        margin-top: 1rem;
+        margin-left: -3rem;
+        border: 1.5px solid $color-grey-light-2;
+        width: 2rem;
+        background-color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $color-grey-light-2;
+         }
+    }
+
+    &__images1 {
+        display: flex;
+        text-align: center;
+    }
+
+    &__profile {
+        flex: 0 0 30%;
+        background-color: #fff;
+        margin-right: 2rem;
+        border-radius: 5px;
+        padding: 1rem 0rem;
+        box-shadow: 0 1.5rem 3rem rgba(0,0,0,.1);
+    }
+
+    &__firstlook {
+        flex: 1;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 1rem 0rem;
+        box-shadow: 0 1.5rem 3rem rgba(0,0,0,.1);
+    }
+
+    &__images2 {
+        margin-top: 2rem;
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 1rem 0rem;
+        text-align: center;
+        box-shadow: 0 1.5rem 3rem rgba(0,0,0,.1);
+    }
+}
+
 
 // Spordirajatised
 
@@ -130,3 +206,104 @@
     margin-right: .2rem;
 }
     
+
+// Paketid
+
+.package__container {
+    display: grid;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8,
+    [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+
+.package {
+    grid-column: center-start / center-end;
+    margin: 7rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 7rem;
+
+    &__item {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    }
+
+    &__btn {
+        float: right;
+        margin-left: auto;
+        border: 1.5px solid $color-grey-light-2;
+        cursor: pointer;
+        width: 2rem;
+        background-color: #fff;
+
+        &:hover {
+            background-color: $color-grey-light-2;
+        }
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid $primary-color;
+        padding: 1rem 1.5rem;
+        
+
+        h2 {
+            margin-right: auto;
+        }
+    }
+
+    &__body {
+        padding: 1rem 1.5rem;
+    }
+
+    .package__content {
+        &--2 {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__detail {
+        background-color: #eee;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+    }
+
+    &__cost {
+        background-color: #eee;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        width: 8rem;
+        text-align: center;
+        margin-right: 1rem;
+    }
+
+    &__group {
+        label {
+            display: block;
+        }
+
+        &--input {
+            font-size: 1.6rem;
+            padding: .7rem;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+        }
+
+
+    }
+
+    &__hind {
+        width: 20rem;
+    }
+}

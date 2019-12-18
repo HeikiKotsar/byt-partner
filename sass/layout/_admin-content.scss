@@ -1,5 +1,6 @@
 .content {
     display: flex;
+    height: 100%;
 }
 
 .sidebar {
@@ -13,6 +14,7 @@
 .content-view {
     background-color: $color-grey-light-2;
     flex: 1;
+    
 }
 
 .detail {

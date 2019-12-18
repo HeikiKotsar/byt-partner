@@ -60,6 +60,9 @@ html {
 body {
   box-sizing: border-box; }
 
+a:hover {
+  cursor: pointer; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;

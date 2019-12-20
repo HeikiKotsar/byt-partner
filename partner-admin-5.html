@@ -101,7 +101,85 @@
                         <li><a href="#payments">Online payments</a></li>
                     </ul>
                     <div class="tab-pane active" id="invoice">
-                        
+                        <div class="reservat-container">
+                            <div class="reservat">
+                                <div class="reservat__head">
+                                    <h1>Sort by:</h1>
+                                </div>
+                                <form action="#">
+                                    <div class="reservat__body">
+                                        <div class="reservat__group">
+                                            <input type="date" class="reservat__input" placeholder="Date">
+                                        </div>
+                                        <div class="reservat__group">
+                                            <select class="reservat__input">
+                                                <option value="payment">Payment status</option>
+                                                <option value="status">Status 1</option>
+                                                <option value="status">Status 2</option>
+                                            </select>
+                                        </div>
+                                        <div class="reservat__group">
+                                            <select class="reservat__input">
+                                                <option value="event">Event type</option>
+                                                <option value="type">Type 1</option>
+                                                <option value="type">Type 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="reservat__body u-margin-top-small-2">
+                                    <table class="invoice">
+                                        <tr>
+                                            <th>Arve</th>
+                                            <th>Kirjeldus</th>
+                                            <th>Tahtaeg</th>
+                                            <th>Summa</th>
+                                            <th>Staatus</th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="invoice__sign new">New</span>
+                                                <span>435364758</span>
+                                                
+                                            </td>
+                                            <td>
+                                                <span class="invoice__item">01.01.01 - 01.01.20</span>
+                                                <span class="invoice__item">Komisjontasu</span>
+                                                <span class="invoice__item">03.veb 2020</span>
+                                            </td>
+                                            <td>16. veb 2020</td>
+                                            <td>€ 6 000,56</td>
+                                            <td>Makstud: € 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span class="invoice__sign bad"></span>
+                                                <span>435364758</span>
+                                            </td>
+                                            <td>
+                                                <span class="invoice__item">01.01.01 - 01.01.20</span>
+                                                <span class="invoice__item">Komisjontasu</span>
+                                                <span class="invoice__item">03.veb 2020</span>
+                                            </td>
+                                            <td>16. veb 2020</td>
+                                            <td>€ 4 000</td>
+                                            <td>Makstud: € 0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>435364758</td>
+                                            <td>
+                                                <span class="invoice__item">01.01.01 - 01.01.20</span>
+                                                <span class="invoice__item">Komisjontasu</span>
+                                                <span class="invoice__item">03.veb 2020</span>
+                                            </td>
+                                            <td>16. veb 2020</td>
+                                            <td>€ 5 000</td>
+                                            <td>Makstud: € 0</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane" id="companydetails">
                        <div class="company-container">

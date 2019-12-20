@@ -1,0 +1,53 @@
+.reservat-container {
+    padding: 5rem 0rem;
+    width: 90rem;
+    margin: auto;
+}
+
+.reservat {
+
+    
+
+    &__head {
+        margin-bottom: 1rem;
+        padding: 0rem 1rem;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .1);
+    }
+
+    &__label {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    &__group {
+        margin-right: 2rem;
+    }
+
+    &__input {
+        font-size: 1.5rem;
+        padding: .7rem;
+        border-radius: 5px;
+        border: none;
+        background-color: #eee;
+    }
+
+    &__btn {
+        margin-left: 2rem;
+        padding: .7rem;
+        border: none;
+        border-radius: 5px;
+        background-color: $primary-color;
+        color: #fff;
+        height: 3.3rem;
+        width: 8rem;
+        cursor: pointer;
+    }
+}

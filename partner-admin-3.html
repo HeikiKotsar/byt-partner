@@ -93,7 +93,34 @@
             </div>
         </nav>
         <div class="content-view">
-            <h1 class="heading-secondary-center">Reservation content</h1>
+            <div class="reservat-container">
+                <div class="reservat">
+                    <div class="reservat__head">
+                        <h1>Reservations</h1>
+                    </div>
+                    <form action="#">
+                        <div class="reservat__body">
+                            <div class="reservat__group">
+                                <label for="date" class="reservat__label">Date of</label>
+                                <select class="reservat__input">
+                                    <option value="arrival">Arrival</option>
+                                    <option value="newbooking">New booking</option>
+                                    <option value="departure">Departure</option>
+                                </select>
+                            </div>
+                            <div class="reservat__group">
+                                <label for="from" class="reservat__label">From</label>
+                                <input type="date" class="reservat__input">
+                            </div>
+                            <div class="reservat__group">
+                                <label for="until" class="reservat__label">Until</label>
+                                <input type="date" class="reservat__input">
+                                <button class="reservat__btn">Show</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -323,6 +323,10 @@ body {
   background-color: #2998ff;
   color: #fff; }
 
+.btn--red {
+  background-color: #FF4136;
+  color: #fff; }
+
 input[type="checkbox"] {
   position: relative;
   width: 4rem;
@@ -731,6 +735,13 @@ header {
   .book-table .type--3 {
     color: #ff7730; }
 
+.book-link a {
+  margin: .8rem;
+  text-decoration: none; }
+
+.book-link a:hover {
+  color: #2998ff; }
+
 .tab-pane {
   display: none; }
 
@@ -748,6 +759,85 @@ header {
   margin-bottom: 3.5rem;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
   border-radius: 10px; }
+
+.reservat-container {
+  padding: 5rem 0rem;
+  width: 90rem;
+  margin: auto; }
+
+.reservat__head {
+  margin-bottom: 1rem;
+  padding: 0rem 1rem; }
+
+.reservat__body {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1); }
+
+.reservat__label {
+  display: block;
+  font-size: 1.5rem; }
+
+.reservat__group {
+  margin-right: 2rem; }
+
+.reservat__input {
+  font-size: 1.5rem;
+  padding: .7rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee; }
+
+.reservat__btn {
+  margin-left: 2rem;
+  padding: .7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2998ff;
+  color: #fff;
+  height: 3.3rem;
+  width: 8rem;
+  cursor: pointer; }
+
+.reserv-container {
+  width: 80rem;
+  margin: auto;
+  padding: 7rem 0rem; }
+
+.reserv {
+  width: 80rem;
+  background-color: #fff;
+  border-radius: 10px; }
+  .reserv__head {
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #2998ff; }
+  .reserv__body {
+    display: flex;
+    padding: 1rem 6rem; }
+  .reserv__content1 {
+    flex: 0 0 50%;
+    margin-right: 4rem; }
+  .reserv__content2 {
+    flex: 1; }
+  .reserv__group {
+    margin-bottom: 1rem; }
+  .reserv__guest {
+    display: flex;
+    align-items: center; }
+  .reserv__left {
+    margin-left: auto; }
+  .reserv__num {
+    margin-left: 1.5rem; }
+  .reserv__buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0rem 4rem; }
+  .reserv__button1 {
+    margin-right: auto; }
 
 .property__nav {
   display: flex;
@@ -951,8 +1041,38 @@ header {
     border-radius: 5px;
     border: none;
     background-color: #eee; }
+    .package__group--input--2 {
+      font-size: 1.6rem;
+      padding: .7rem;
+      border-radius: 5px;
+      border: none;
+      margin: 0rem 1rem;
+      width: 8rem;
+      background-color: #eee; }
   .package__hind {
     width: 20rem; }
+
+.invoice {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem; }
+  .invoice td {
+    border: 1.5px solid #2998ff;
+    border-radius: 5px; }
+  .invoice__item {
+    display: block;
+    font-size: 1.3rem; }
+  .invoice__sign {
+    display: flex;
+    justify-content: start;
+    margin-left: .4rem;
+    font-size: 1.2rem; }
+
+.new {
+  color: #2998ff; }
+
+.bad {
+  color: red; }
 
 .company-container {
   margin: auto;

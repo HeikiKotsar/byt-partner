@@ -27,6 +27,11 @@
         background-color: $primary-color;
         color: $color-white;
     }
+
+    &--red {
+        background-color: #FF4136;
+        color: $color-white;
+    }
 }
 
 input[type="checkbox"] {

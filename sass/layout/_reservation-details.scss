@@ -1,0 +1,59 @@
+.reserv-container {
+    width: 80rem;
+    margin: auto;
+    padding: 7rem 0rem;
+}
+
+.reserv {
+    width: 80rem;
+    background-color: #fff;
+    border-radius: 10px;
+
+    &__head {
+        padding: 1rem 2rem;
+        border-bottom: 2px solid $primary-color;
+    }
+
+    &__body {
+        display: flex;
+        padding: 1rem 6rem;
+        
+    }
+
+    &__content1 {
+        flex: 0 0 50%;
+        margin-right: 4rem;
+    }
+
+    &__content2 {
+        flex: 1;
+    }
+
+    &__group {
+        margin-bottom: 1rem;
+    }
+
+    &__guest {
+        display: flex;
+        align-items: center;
+    }
+
+    &__left {
+        margin-left: auto;
+    }
+
+    &__num {
+        margin-left: 1.5rem;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0rem 4rem;
+    }
+
+    &__button1 {
+        margin-right: auto;
+    }
+}

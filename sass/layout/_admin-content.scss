@@ -62,6 +62,8 @@
 
 
 
+
+
 .book-heading {
     color: #fff;
     background-color: $primary-color;
@@ -103,6 +105,17 @@
         &--3 {
             color: $color-orange;
         }
+    }
+}
+
+.book-link {
+    a {
+        margin: .8rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $primary-color;
     }
 }
 

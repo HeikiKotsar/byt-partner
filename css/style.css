@@ -1044,6 +1044,8 @@ header {
     background-color: #fff; }
     .package__btn:hover {
       background-color: #eee; }
+  .package__desc {
+    padding: 1rem 1.5rem; }
   .package__head {
     display: flex;
     align-items: center;
@@ -1138,6 +1140,15 @@ header {
 
 .check-item {
   margin-left: 1rem; }
+
+.items__search {
+  font-size: 1.6rem;
+  padding: .7rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #eee; }
 
 .invoice {
   width: 100%;

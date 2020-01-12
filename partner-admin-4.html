@@ -136,6 +136,37 @@
                                                 <p>Kirjeldus: Wifi, 2 voodit</p>
                                             </div>
                                         </div>
+                                        <div class="roomtype">
+                                            <div class="form__group">
+                                                <label for="room-type" class="property-item__label">Toa tüüp:</label>
+                                                <input type="text" class="property-item__input">
+                                            </div>
+                                            <div class="property-item__container">
+                                                <div class="property-item__group">
+                                                    <label for="room-type" class="property-item__label">Toa hind ööpäevas</label>
+                                                    <input type="number" class="property-item__input--2">
+                                                </div>
+                                                <div class="property-item__group">
+                                                    <label for="room-type" class="property-item__label">Paketi hind ööpäevas</label>
+                                                    <input type="number" class="property-item__input--2">
+                                                </div>
+                                                <div class="property-item__group">
+                                                    <label for="room-type" class="property-item__label">Tubade arv</label>
+                                                    <input type="number" class="property-item__input--2">
+                                                </div>
+                                                <div class="room-desc">
+                                                    <div id="list1" class="dropdown-check-list" tabindex="100">
+                                                        <span class="anchor">Select room itmes</span>
+                                                        <ul id="items" class="items">
+                                                            <input type="search" class="items__search" placeholder="Search...">
+                                                            <li class="item-flex"><input type="checkbox" /><span class="check-item">TV</span> </li>
+                                                            <li class="item-flex"><input type="checkbox" /><span class="check-item">WC</span> </li>
+                                                            <li class="item-flex"><input type="checkbox" /><span class="check-item">Wifi</span> </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <button class="btn--green btn--2">&#43; Add room</button>
                                     </div>
                                 </div>
@@ -177,6 +208,7 @@
                                                     <div id="list1" class="dropdown-check-list" tabindex="100">
                                                         <span class="anchor">Select room itmes</span>
                                                         <ul id="items" class="items">
+                                                            <input type="search" class="items__search" placeholder="Search...">
                                                             <li class="item-flex"><input type="checkbox" /><span class="check-item">TV</span> </li>
                                                             <li class="item-flex"><input type="checkbox" /><span class="check-item">WC</span> </li>
                                                             <li class="item-flex"><input type="checkbox" /><span class="check-item">Wifi</span> </li>
@@ -348,7 +380,11 @@
                                             <h2>Pakett</h2>
                                             <input class="switchbutton" type="checkbox" name="on">
                                         </div>
+                                        <div class="package__desc">
+                                            <p class="paragraph package__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit fugiat repudiandae itaque eos omnis, quia delectus dolore quasi rerum alias atque commodi iusto aut pariatur expedita at amet? Nulla?
+                                        </div>
                                         <div class="package__body">
+                                            
                                             <button class="package__btn"> &#9998; </button>
                                             <div class="package__content">
                                                 <h2>Majutusasutus</h2>
@@ -374,6 +410,9 @@
                                         <div class="package__head">
                                             <h2>Pakett</h2>
                                             <input class="switchbutton" type="checkbox" name="on">
+                                        </div>
+                                        <div class="package__desc">
+                                            <p class="paragraph package__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit fugiat repudiandae itaque eos omnis, quia delectus dolore quasi rerum alias atque commodi iusto aut pariatur expedita at amet? Nulla?
                                         </div>
                                         <div class="package__body">
                                             <button class="package__btn"> &#9998; </button>
@@ -405,6 +444,7 @@
                                         <div class="package__body">
                                             <form class="property__content-5">
                                                 <div class="package__group">
+                                                    <textarea class="property-item__desc" name="desc" id="property-desc" placeholder="Paketi tutvustus"></textarea>
                                                     <label class="paragraph">Lisa Majutusasutus</label>
                                                     <select class="package__group--input">
                                                         <option value="arrival">Option 1</option>

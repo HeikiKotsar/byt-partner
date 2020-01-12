@@ -288,6 +288,10 @@
         }
     }
 
+    &__desc {
+        padding: 1rem 1.5rem;
+    }
+
     &__head {
         display: flex;
         align-items: center;
@@ -414,4 +418,15 @@
 
   .check-item {
       margin-left: 1rem;
+  }
+
+
+  .items__search {
+    font-size: 1.6rem;
+    padding: .7rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
   }

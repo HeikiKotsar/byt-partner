@@ -54,22 +54,71 @@
 
 .property-item {
 
-     &__head {
-         display: flex;
-         align-items: center;
-         margin-bottom: 0.5rem;
-     }
+    &__flex {
+        display: flex;
+        justify-content: end;
+    }
 
-     &__container {
-         width: 30%;
-         margin-left: 10%;
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    &__desc {
+        width: 40rem;
+        height: 10rem;
+        font-size: 1.6rem;
+        padding: .7rem;
+        border-radius: 5px;
+        border: none;
+        background-color: #eee;
+        margin-bottom: 1rem;
+    }
+
+    &__group {
+        display: flex;
+        padding: 1rem 0rem;
+        width: 22rem;
+    }
+
+    &__label {
+        
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+
+    &__input {
+        font-size: 1.6rem;
+        padding: .7rem;
+        width: 30rem;
+        border-radius: 5px;
+        border: none;
+        background-color: #eee;
+
+        &--2 {
+            font-size: 1.6rem;
+            padding: .7rem;
+            width: 7rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+            margin-left: auto;
+        }
+    }
+
+
+
+    &__container {
+        width: 30%;
+        margin-left: 10%;
 
         .room-list {
             background-color: $color-grey-light-2;
             border-radius: 10px;
         }
 
-         .room__item {
+            .room__item {
             display: flex;
             padding: 0.5rem;
             font-size: 1.4rem;
@@ -83,22 +132,19 @@
             margin: 1rem 0;
             font-size: 1.4rem;
         }
-     }
+    }
 
-     
+    .change-btn {
+        margin-left: auto;
+        border: 1.5px solid $color-grey-light-2;
+        width: 2rem;
+        background-color: #fff;
+        cursor: pointer;
 
-
-     .change-btn {
-         margin-left: auto;
-         border: 1.5px solid $color-grey-light-2;
-         cursor: pointer;
-         width: 2rem;
-         background-color: #fff;
-
-         &:hover {
+        &:hover {
             background-color: $color-grey-light-2;
-         }
-     }
+        }
+    }
 }
 
 // Keskuse kirjeldus
@@ -317,3 +363,55 @@
         width: 20rem;
     }
 }
+
+
+.dropdown-check-list {
+    display: inline-block;
+  }
+  .dropdown-check-list .anchor {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 50px 5px 10px;
+    border: 1px solid #ccc;
+    width: 30rem;
+  }
+  .dropdown-check-list .anchor:after {
+    position: absolute;
+    content: "";
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 5px;
+    right: 10px;
+    top: 20%;
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .dropdown-check-list .anchor:active:after {
+    right: 8px;
+    top: 21%;
+  }
+  .dropdown-check-list ul.items {
+    padding: 2px;
+    display: none;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  .dropdown-check-list ul.items li {
+    list-style: none;
+  }
+
+  .item-flex {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.4rem;
+      margin-left: 1rem;
+  }
+
+  .check-item {
+      margin-left: 1rem;
+  }

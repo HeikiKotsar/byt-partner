@@ -101,24 +101,65 @@
                     <form action="#">
                         <div class="reservat__body">
                             <div class="reservat__group">
-                                <label for="date" class="reservat__label">Date of</label>
-                                <select class="reservat__input">
-                                    <option value="arrival">Arrival</option>
-                                    <option value="newbooking">New booking</option>
-                                    <option value="departure">Departure</option>
-                                </select>
-                            </div>
-                            <div class="reservat__group">
                                 <label for="from" class="reservat__label">From</label>
                                 <input type="date" class="reservat__input">
                             </div>
                             <div class="reservat__group">
                                 <label for="until" class="reservat__label">Until</label>
                                 <input type="date" class="reservat__input">
+                                
+                            </div>
+                            <div class="reservat__group">
+                                <label for="date" class="reservat__label">Broneeringud</label>
+                                <select class="reservat__input">
+                                    <option value="arrival">Sees olevad broneeringud</option>
+                                    <option value="newbooking">Kinnitust vajavad broneeringud</option>
+                                    <option value="departure">Möödunud broneeringud</option>
+                                </select>
                                 <button class="reservat__btn">Show</button>
                             </div>
                         </div>
                     </form>
+                    <div class="reservat__body u-margin-top-small-2">
+                        <table class="invoice">
+                            <tr>
+                                <th>Guest name</th>
+                                <th>From</th>
+                                <th>Until</th>
+                                <th>Book content</th>
+                                <th>Payment status</th>
+                                <th>Payment amount</th>
+                                <th>Invoice nr</th>
+                            </tr>
+                            <tr>
+                                <td>Juri Jaanus</td>
+                                <td>6. November</td>
+                                <td>19. Novemeber</td>
+                                <td>Palett 2 Sauna 3x</td>
+                                <td>Paid on the spot</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Juri Jaanus</td>
+                                <td>6. November</td>
+                                <td>19. Novemeber</td>
+                                <td>Palett 2 Sauna 3x</td>
+                                <td>Paid on the spot</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Juri Jaanus</td>
+                                <td>6. November</td>
+                                <td>19. Novemeber</td>
+                                <td>Palett 2 Sauna 3x</td>
+                                <td>Paid on the spot</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

@@ -793,7 +793,6 @@ header {
 
 .reservat__btn {
   margin-left: 2rem;
-  padding: .7rem;
   border: none;
   border-radius: 5px;
   background-color: #2998ff;
@@ -1154,9 +1153,8 @@ header {
   width: 100%;
   text-align: center;
   font-size: 1.6rem; }
-  .invoice td {
-    border: 1.5px solid #2998ff;
-    border-radius: 5px; }
+  .invoice tr:nth-child(even) {
+    background-color: #eee; }
   .invoice__item {
     display: block;
     font-size: 1.3rem; }
@@ -1165,12 +1163,29 @@ header {
     justify-content: start;
     margin-left: .4rem;
     font-size: 1.2rem; }
+  .invoice__link {
+    text-decoration: none;
+    color: #2998ff; }
+    .invoice__link:hover {
+      color: blue; }
+  .invoice__icon {
+    height: 2rem;
+    width: 2rem; }
+    .invoice__icon--2 {
+      margin-top: .5rem;
+      height: 1.8rem;
+      width: 1.8rem; }
 
 .new {
-  color: #2998ff; }
+  color: #2998ff;
+  font-weight: 400; }
 
 .bad {
-  color: red; }
+  fill: #FF4136; }
+
+.green {
+  fill: #55c57a;
+  color: #55c57a; }
 
 .company-container {
   margin: auto;

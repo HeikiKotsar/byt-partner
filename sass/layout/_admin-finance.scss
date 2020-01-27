@@ -4,11 +4,13 @@
     font-size: 1.6rem;
     
 
-    td {
-        border: 1.5px solid $primary-color;
-        border-radius: 5px;
-        
+    
+
+    tr:nth-child(even) {
+        background-color: #eee;
     }
+
+    
 
     &__item {
         display: block;
@@ -22,14 +24,40 @@
         font-size: 1.2rem;
     }
 
+    &__link {
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover {
+            color: blue;
+        }
+    }
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+
+        &--2 {
+            margin-top: .5rem;
+            height: 1.8rem;
+            width: 1.8rem;
+        }
+    }
+
 }
 
 .new {
     color: $primary-color;
+    font-weight: 400;
 }
 
 .bad {
-    color: red;
+    fill: #FF4136;
+}
+
+.green {
+    fill: $color-green-primary;
+    color: $color-green-primary;
 }
 
 .company-container {

@@ -920,6 +920,78 @@ header {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5); }
 
+.newbronn {
+  padding: 2rem 1rem; }
+  .newbronn span {
+    font-size: 1.4rem; }
+  .newbronn__group {
+    display: flex;
+    align-items: center;
+    margin-top: .5rem; }
+    .newbronn__group--input {
+      padding: .7rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #eee;
+      outline: none; }
+  .newbronn__grid {
+    display: grid;
+    grid-template-columns: auto auto; }
+  .newbronn__check {
+    margin-left: 1rem; }
+  .newbronn__label {
+    margin-left: .3rem;
+    margin-bottom: .1rem;
+    font-size: 1.4rem; }
+  .newbronn__heading {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem; }
+  .newbronn__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .newbronn__item--btn {
+      display: flex;
+      align-items: center; }
+  .newbronn__countbtn {
+    border-radius: 5px;
+    border: none;
+    background: none;
+    margin: 0rem .5rem;
+    outline: none;
+    cursor: pointer; }
+    .newbronn__countbtn--icon {
+      height: 1.8rem;
+      width: 1.8rem;
+      fill: #2998ff; }
+  .newbronn__icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5rem;
+    fill: #2998ff; }
+  .newbronn__hotel {
+    font-size: 1.7rem;
+    margin: 3rem 2rem; }
+  .newbronn__count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .newbronn__count--item {
+      margin-right: 2rem; }
+    .newbronn__count--input {
+      margin-left: .5rem;
+      padding: .5rem;
+      border-radius: 5px;
+      border: none;
+      background-color: #eee;
+      outline: none;
+      width: 4.5rem;
+      text-align: center; }
+  .newbronn__text {
+    display: flex;
+    margin-top: 1.5rem; }
+
 .modal-content {
   margin: 10% auto;
   width: 40rem;
@@ -944,6 +1016,13 @@ header {
   padding: 1rem 2rem;
   font-size: 1.5rem; }
 
+.close-bronn {
+  float: right;
+  margin-right: 1rem;
+  font-size: 26px;
+  color: #2998ff;
+  cursor: pointer; }
+
 .close {
   color: #ccc;
   float: right;
@@ -957,6 +1036,80 @@ header {
     opacity: 0; }
   to {
     opacity: 1; } }
+
+.rooms-container {
+  padding: 5rem 0rem;
+  width: 100rem;
+  height: 4rem;
+  margin: auto; }
+
+.thumbnail-slider {
+  width: 100rem;
+  float: left;
+  overflow: hidden; }
+
+.thumbnail-slider .thumbnail-container {
+  width: 100rem;
+  float: left;
+  transition: margin 1s ease; }
+
+.room {
+  height: 25rem;
+  float: left; }
+  .room__heading {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .room__item {
+    background-color: #fff;
+    font-size: 1.6rem;
+    height: 20rem;
+    border-radius: 5px;
+    cursor: pointer; }
+    .room__item--head h2 {
+      font-size: 1.6rem;
+      padding: 1rem 2rem; }
+    .room__item--body {
+      padding: 0rem 3.5rem; }
+    .room__item--item {
+      display: flex;
+      width: 100%;
+      border-bottom: 2px solid #2998ff;
+      margin-bottom: .7rem; }
+    .room__item--number {
+      margin-left: auto; }
+
+.active--room {
+  background-color: #2998ff;
+  color: #fff; }
+  .active--room .room__item--item {
+    border-bottom: 2px solid #fff; }
+
+.thumbnail-slider .controls {
+  width: 100rem;
+  float: left;
+  padding: 15px; }
+
+.thumbnail-slider .controls ul {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.thumbnail-slider .controls ul li {
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 1px solid #c3c3c3;
+  border-radius: 5px;
+  margin: 4px;
+  display: inline-block;
+  line-height: 33px;
+  cursor: pointer; }
+
+.thumbnail-slider .controls ul li.active {
+  background-color: #2998ff;
+  color: #ffffff; }
 
 .reservat-container {
   padding: 5rem 0rem;

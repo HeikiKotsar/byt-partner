@@ -1,3 +1,5 @@
+
+// Bronnid
 const modal = document.querySelector('#my-modal');
 const modalBtn = document.querySelector('#modal-btn');
 const closeBtn = document.querySelector('.close');
@@ -23,3 +25,25 @@ const closeBtn = document.querySelector('.close');
       modal.style.display = 'none';
     }
 }
+
+// New
+const newBronn = document.querySelector('#new-bronn');
+const newBtn = document.querySelector('#new-btn');
+const closeBronn = document.querySelector('.close-bronn');
+
+newBtn.addEventListener('click', openNewBronn);
+closeBronn.addEventListener('click', closeNewBronn);
+
+// Open
+function openNewBronn() {
+  newBronn.style.display = 'block';
+}
+
+// Close
+function closeNewBronn() {
+  newBronn.style.display = 'none';
+}
+
+
+
+

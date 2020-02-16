@@ -230,6 +230,117 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.newbronn {
+    padding: 2rem 1rem;
+
+    span {
+        font-size: 1.4rem;
+    }
+
+    &__group {
+        
+        display: flex;
+        align-items: center;
+        margin-top: .5rem;
+
+        &--input {
+            padding: .7rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+            outline: none;
+
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: auto auto; 
+    }
+
+    &__check {
+        margin-left: 1rem;
+    }
+
+    &__label {
+        margin-left: .3rem;
+        margin-bottom: .1rem;
+        font-size: 1.4rem;
+    }
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &--btn {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__countbtn {
+        border-radius: 5px;
+        border: none;
+        background: none;
+        margin: 0rem .5rem;
+        outline: none;
+        cursor: pointer;
+
+        &--icon {
+            height: 1.8rem;
+            width: 1.8rem;
+            fill: $primary-color;
+        }
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        margin-right: .5rem;
+        fill: $primary-color;
+    }
+
+
+    &__hotel {
+        font-size: 1.7rem;
+        margin: 3rem 2rem;
+    }
+
+    &__count {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+
+        &--item {
+            margin-right: 2rem;
+        }
+
+        &--input {
+            margin-left: .5rem;
+            padding: .5rem;
+            border-radius: 5px;
+            border: none;
+            background-color: #eee;
+            outline: none;
+            width: 4.5rem;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        display: flex;
+        margin-top: 1.5rem;
+    }
+}
+
 .modal-content {
     margin: 10% auto;
     width: 40rem;
@@ -260,6 +371,13 @@
     
 }
 
+.close-bronn {
+    float: right;
+    margin-right: 1rem;
+    font-size: 26px;
+    color: $primary-color;
+    cursor: pointer;
+}
 
 .close {
     color: #ccc;
@@ -279,4 +397,109 @@
     }
 }
 
+
 // MODAL END
+
+
+// ROOMS
+
+.rooms-container {
+    padding: 5rem 0rem;
+    width: 100rem;
+    height: 4rem;
+    margin: auto;
+}
+
+.thumbnail-slider{
+	width: 100rem;
+	float: left;
+	overflow: hidden;
+}
+
+.thumbnail-slider .thumbnail-container{
+	width: 100rem;
+	float: left;
+	transition: margin 1s ease;
+}
+
+.room {
+
+    height: 25rem;
+    float: left;
+
+    &__heading {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+   
+
+    &__item {
+        background-color: #fff;
+        font-size: 1.6rem;
+        height: 20rem;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &--head {
+            h2 {
+                font-size: 1.6rem;
+                padding: 1rem 2rem;
+            }
+        }
+
+        &--body {
+            padding: 0rem 3.5rem;
+        }
+
+        &--item {
+            display: flex;
+            width: 100%;
+            border-bottom: 2px solid $primary-color;
+            margin-bottom: .7rem;
+        }
+
+        &--number {
+            margin-left: auto;
+        }
+    }
+
+}
+
+.active--room {
+    background-color: $primary-color;
+    color: #fff;
+
+    .room__item--item {
+        border-bottom: 2px solid #fff;
+    }
+}
+
+.thumbnail-slider .controls{
+	width: 100rem;
+	float: left;
+	padding:15px;
+}
+
+.thumbnail-slider .controls ul{
+	display: block;
+	text-align: center;
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+.thumbnail-slider .controls ul li{
+	height: 3.5rem;
+	width: 3.5rem;
+    border:1px solid #c3c3c3;
+    border-radius: 5px;
+	margin:4px;
+	display: inline-block;
+	line-height: 33px;
+	cursor: pointer;
+}
+.thumbnail-slider .controls ul li.active{
+	background-color: $primary-color;
+	color:#ffffff;
+
+}

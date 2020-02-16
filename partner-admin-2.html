@@ -7,6 +7,11 @@
     <title>Become a partner</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
@@ -96,7 +101,7 @@
             <div class="property">
                     <ul id="nav-tab" class="property__nav">
                         <li class="active"><a href="#calendar">Calendar</a></li>
-                        <li><a href="#rooms">Rooms</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
                         <li><a href="#sport-facalities">Sport facilities</a></li>
                     </ul>
                     <div class="tab-pane active" id="calendar">
@@ -104,7 +109,7 @@
                            <div class="calendar">
                              
                                    <div class="calendar__head">
-                                        <a href="#" class="calendar__new">New
+                                        <a  id="new-btn" class="calendar__new">New
                                             <svg class="calendar__new--icon">
                                                 <use xlink:href="img/2icons.svg#icon-plus"></use>
                                             </svg>
@@ -161,11 +166,11 @@
                                                     </svg>
                                                     <p>Mingi bronn</p>
                                                 </div>
-                                                <button id="modal-btn" class="days__more">
+                                                <a id="modal-btn" class="days__more">
                                                     <svg class="days__more--icon">
                                                         <use xlink:href="img/2icons.svg#icon-navigation-more1"></use>
                                                     </svg>
-                                                </button>
+                                                </a>
                                             </div>
                                         </li>
                                         <li>
@@ -465,6 +470,146 @@
                                         <p>- seletus</p>
                                     </div>
                                </div>
+
+                               <div id="new-bronn" class="modal">
+                                <div class="modal-content">
+                                    <span class="close-bronn">&times;</span>
+                                  <div class="newbronn">
+                                      <div class="newbronn__group">
+                                        <svg class="newbronn__icon">
+                                            <use xlink:href="img/sprite.svg#icon-people_alt"></use>
+                                        </svg>
+                                        <input class="newbronn__group--input" type="text" placeholder="Lisa klient">
+                                      </div>
+                                      <div class="newbronn__heading">
+                                        <h2>Spordirajatis</h2>
+                                      </div>
+                                      <div class="newbronn__group">
+                                            <div class="newbronn__grid">
+                                                <div class="newbronn__group">
+                                                    <input class="newbronn__check" type="checkbox">
+                                                    <label class="newbronn__label" for="checkbox">Korvpallivaljak 1</label>
+                                                </div>
+                                                <div class="newbronn__group">
+                                                    <input class="newbronn__check" type="checkbox">
+                                                    <label class="newbronn__label" for="checkbox">Korvpallivaljak 2</label>
+                                                </div>
+                                                <div class="newbronn__group">
+                                                    <input class="newbronn__check" type="checkbox">
+                                                    <label class="newbronn__label" for="checkbox">Korvpallivaljak 3</label>
+                                                </div>
+                                                <div class="newbronn__group">
+                                                    <input class="newbronn__check" type="checkbox">
+                                                    <label class="newbronn__label" for="checkbox">Ujulas</label>
+                                                </div>
+                                                <div class="newbronn__group">
+                                                    <input class="newbronn__check" type="checkbox">
+                                                    <label class="newbronn__label" for="checkbox">Kergejoustik</label>
+                                                </div>
+                                            </div>                                      
+                                        </div>
+                                        <div class="newbronn__heading">
+                                            <h2>Majutus</h2>
+                                        </div>
+                                        <div class="newbronn__majutus">
+                                            <div class="newbronn__count">
+                                                <div class="newbronn__count--item">
+                                                    <label class="newbronn__label" for="twin">Kulaliste arv</label>
+                                                    <input class="newbronn__count--input" type="text">
+                                                </div>
+                                                <div class="newbronn__count--item">
+                                                    <label class="newbronn__label" for="twin">Majutatud</label>
+                                                    <input class="newbronn__count--input" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="newbronn__group">
+                                                <span class="newbronn__hotel">Hotell 1</span>
+                                                <div class="newbronn__rooms">
+
+                                                    <div class="newbronn__item">
+                                                        <label class="newbronn__label" for="twin">Twin room</label>
+                                                        <div class="newbronn__item--btn">
+                                                            <button class="newbronn__countbtn">
+                                                                <svg class="newbronn__countbtn--icon">
+                                                                    <use xlink:href="img/sprite.svg#icon-minus-alt"></use>
+                                                                </svg>
+                                                            </button>
+                                                            <span>0</span>
+                                                            <button class="newbronn__countbtn">
+                                                                <svg class="newbronn__countbtn--icon">
+                                                                    <use xlink:href="img/sprite.svg#icon-plus-alt"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="newbronn__item">
+                                                        <label class="newbronn__label" for="twin">Twinssssssss room</label>
+                                                        <div class="newbronn__item--btn">
+                                                            <button class="newbronn__countbtn">
+                                                                <svg class="newbronn__countbtn--icon">
+                                                                    <use xlink:href="img/sprite.svg#icon-minus-alt"></use>
+                                                                </svg>
+                                                            </button>
+                                                            <span>0</span>
+                                                            <button class="newbronn__countbtn">
+                                                                <svg class="newbronn__countbtn--icon">
+                                                                    <use xlink:href="img/sprite.svg#icon-plus-alt"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="newbronn__item">
+                                                        <label class="newbronn__label" for="twin">Twinsssssssssdsdsdsds room</label>
+                                                        <div class="newbronn__item--btn">
+                                                            <button class="newbronn__countbtn">
+                                                                <svg class="newbronn__countbtn--icon">
+                                                                    <use xlink:href="img/sprite.svg#icon-minus-alt"></use>
+                                                                </svg>
+                                                            </button>
+                                                            <span>0</span>
+                                                            <button class="newbronn__countbtn">
+                                                                <svg class="newbronn__countbtn--icon">
+                                                                    <use xlink:href="img/sprite.svg#icon-plus-alt"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="newbronn__group">
+                                            <svg class="newbronn__icon">
+                                                <use xlink:href="img/sprite.svg#icon-calendar1"></use>
+                                            </svg>
+                                            <div>
+                                                <label class="newbronn__label" for="checkin">Check in</label>
+                                                <input class="newbronn__group--input" type="date">
+                                            </div>
+                                            <div>
+                                                <label class="newbronn__label" for="checkin">Check out</label>
+                                                <input class="newbronn__group--input" type="date">
+                                            </div>
+                                        </div>
+
+                                        <div class="newbronn__text">
+                                            <svg class="newbronn__icon">
+                                                <use xlink:href="img/sprite.svg#icon-file-text2"></use>
+                                            </svg>
+                                            <textarea class="newbronn__group--input" name="text" id="text" cols="41" rows="5" placeholder="Lisa kirjeldus"></textarea>
+                                        </div>
+                                        <br>
+                                        <div class="newbronn__group">
+                                            <button class="btn--blue btn--2">Save</button>
+                                            <button class="btn--red btn--2 reserv__num" >Delete</button>
+                                        </div>
+                                       
+                                  </div>
+                                </div>
+                              </div>
                                
                               
                                <div id="my-modal" class="modal">
@@ -520,12 +665,33 @@
                                 </div>
                               </div>
 
+                             
+
                            </div>
                        </div>
                     </div>
+                    
                     <div class="tab-pane" id="rooms">
-
-                       
+                        <div class="rooms-container">
+                            <div class="main">
+                                <div class="slider slider-for">
+                                  <div><h3>1</h3></div>
+                                  <div><h3>2</h3></div>
+                                  <div><h3>3</h3></div>
+                                  <div><h3>4</h3></div>
+                                  <div><h3>5</h3></div>
+                                </div>
+                                <div class="slider slider-nav">
+                                  <div><h3>1</h3></div>
+                                  <div><h3>2</h3></div>
+                                  <div><h3>3</h3></div>
+                                  <div><h3>4</h3></div>
+                                  <div><h3>5</h3></div>
+                                </div>
+                              </div>
+                              
+                        </div>
+                            
                     </div>
                        
                     </div>
@@ -697,7 +863,10 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="modal.js"></script>
     <script src="main.js"></script>
+    
+    
 </body>
 </html>

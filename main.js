@@ -1,3 +1,7 @@
+
+
+
+
 function openSlideMenu() {
   document.getElementById('side-menu').style.width = '250px';
 }
@@ -30,7 +34,7 @@ function onTabClick(event) {
 
   const checkList = document.getElementById('list1');
   const items = document.getElementById('items');
-  checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+  // checkList.getElementsByClassName('anchor')[0].onclick = function() {
     if (items.classList.contains('visible')) {
       items.classList.remove('visible');
       items.style.display = "none";
@@ -39,12 +43,17 @@ function onTabClick(event) {
       items.style.display = "block";
     }
   
-  }
+  // }
   
   items.onblur = function(evt) {
     items.classList.remove('visible');
   }
 
+
+ 
+
+
+  
   
   
   

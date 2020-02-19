@@ -113,12 +113,12 @@
         width: 30%;
         margin-left: 10%;
 
-        .room-list {
+        .hotel-list {
             background-color: $color-grey-light-2;
             border-radius: 10px;
         }
 
-            .room__item {
+            .hotel__item {
             display: flex;
             padding: 0.5rem;
             font-size: 1.4rem;
@@ -317,6 +317,10 @@
                 margin-right: 1rem;
             }
         }
+
+        &--span {
+            margin: .2rem;
+        }
     }
 
     &__detail {
@@ -338,6 +342,7 @@
     &__group {
         label {
             display: block;
+            font-size: 1.5rem;
         }
 
         &--input {
@@ -360,7 +365,13 @@
             }
         }
 
+    }
 
+    &__checkboxes {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0rem 2rem;
     }
 
     &__hind {

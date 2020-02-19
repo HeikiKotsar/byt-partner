@@ -114,7 +114,8 @@
                                     <td>Sports Camp</td>
                                     <td>Kristo Kuusk</td>
                                     <td>01.01.01 - 01.01.20</td>
-                                    <td class="book-link"><a class="detail__link" href="reservation-details.html">View</a></td>
+                                    <td class="book-link"><a class="detail__link" id="detail-btn">View</a></td>
+                                    <!-- MODAL btn -->
                                 </tr>
                                 <tr>
                                     <td class="type--2">Arrival</td>
@@ -142,7 +143,7 @@
                                     <td>Sports Camp</td>
                                     <td>Alo Kuusk</td>
                                     <td>01.01.01 - 01.01.20</td>
-                                    <td class="book-link"><a class="detail__link" href="reservation-details.html">View</a></td>
+                                    <td class="book-link"><a class="detail__link" >View</a></td>
                                 </tr>
                                 <tr>
                                     <td class="type--2">Arrival</td>
@@ -192,8 +193,95 @@
                     </div>
                 </div>
             </div>
+            <div id="detail" class="modal-2">
+                <div class="modal-content-2">
+                    <div class="reserv">
+                        <div class="reserv__head">
+                            <div class="modal-flex">
+                                <h2>Reservation details</h2>
+                                <span class="close-detail">&times;</span>
+                            </div>
+                        </div>
+                        <div class="reserv__body">
+                            <div class="reserv__content1">
+                                <div class="reserv__group">
+                                    <p class="paragraph">Check in</p>
+                                    <h2>Reede, 2.jaanuar 2020</h2>
+                                </div>
+                                <div class="reserv__group">
+                                    <p class="paragraph">Check out</p>
+                                    <h2>Reede, 7.jaanuar 2020 (5 nights)</h2>
+                                </div>
+                                <div class="reserv__group">
+                                    <div class="reserv__guest">
+                                        <p class="paragraph">Total guests:</p>
+                                        <h2 class="reserv__num">41</h2>
+                                    </div>
+                                </div>
+                                <div class="reserv__group">
+                                    <p class="paragraph">Majutus</p>
+                                    <div class="reserv__guest">
+                                        <p class="paragraph">Twin rooms:</p>
+                                        <h2 class="reserv__num">2</h2>
+                                    </div>
+                                    <div class="reserv__guest">
+                                        <p class="paragraph">Triple rooms:</p>
+                                        <h2 class="reserv__num">13</h2>
+                                    </div>
+                                </div>
+                                <div class="reserv__group">
+                                    <p class="paragraph">Lisateenused:</p>
+                                    <p class="paragraph">Sauna 2x</p>
+                                </div>
+                            </div>
+    
+                            <div class="reserv__content2">
+                                <div class="reserv__group">
+                                    <p class="paragraph">Guest</p>
+                                    <h2>Juri Jaanus</h2>
+                                </div>
+                                <div class="reserv__group">
+                                    <p class="paragraph">Guest</p>
+                                    <h2>TYSK, korvpall</h2>
+                                </div>
+                                <div class="reserv__group">
+                                    <div class="reserv__guest">
+                                        <p class="paragraph">Makseviis:</p>
+                                        <h2 class="reserv__left">Koha peal, sularahas</h2>
+                                    </div>
+                                </div>
+                                <div class="reserv__group">
+                                    <div class="reserv__guest">
+                                        <h2>Summa tasumisele:</h2>
+                                        <h1 class="reserv__left">4000€</h1>
+                                    </div>
+                                    <div class="reserv__guest">
+                                        <h2>Vahendustasu (10%):</h2>
+                                        <h1 class="reserv__left">440€</h1>
+                                    </div>
+                                </div>
+                                <div class="reserv__group">
+                                    <p class="paragraph">Recieved:</p>
+                                </div>
+                                <div class="reserv__group">
+                                    <p class="paragraph">Payment status:</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reserv__buttons">
+                            <div class="reserv__button1">
+                                <button class="btn--green btn--2">Confirm</button>
+                                <button class="btn--red btn--2 reserv__num">Decline</button>
+                            </div>
+                            <button class="btn--blue btn--2">Message client</button>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
         </main>
     </div>
+    <script src="modal.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

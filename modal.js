@@ -1,3 +1,21 @@
+// Reservation detail modal
+const reservDetail = document.querySelector('#detail');
+const detailBtn = document.querySelector('#detail-btn');
+const closeDetail = document.querySelector('.close-detail');
+
+detailBtn.addEventListener('click', openDetail);
+closeDetail.addEventListener('click', closeReserv);
+
+// Open
+function openDetail() {
+  reservDetail.style.display = 'block';
+}
+
+//  Close
+function closeReserv() {
+ reservDetail.style.display = 'none';
+}
+
 
 // Bronnid
 const modal = document.querySelector('#my-modal');
@@ -43,6 +61,21 @@ function openNewBronn() {
 function closeNewBronn() {
   newBronn.style.display = 'none';
 }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

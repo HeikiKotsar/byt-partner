@@ -230,6 +230,18 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.modal-2 {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .newbronn {
     padding: 2rem 1rem;
 
@@ -341,10 +353,29 @@
     }
 }
 
+.modal-flex {
+    display: flex;
+    align-items: center;
+}
+
 .modal-content {
     margin: 10% auto;
     width: 40rem;
     background-color: #fff;
+    animation-name: modalopen;
+    animation-duration: 1s;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.modal-content-2 {
+    margin: 10% auto;
+    width: 80rem;
+    background-color: #fff;
+    padding-bottom: 1rem;
     animation-name: modalopen;
     animation-duration: 1s;
 
@@ -386,6 +417,14 @@
     color: #fff;
     margin-left: auto;
     cursor: pointer;
+}
+
+.close-detail {
+    
+    font-size: 30px;
+    margin-left: auto;
+    cursor: pointer;
+   
 }
 
 @keyframes modalopen {

@@ -138,19 +138,33 @@
     }
 
     &__more {
+        position: absolute;
+        top: 35.5rem;
         background: none;
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         border: none;
         fill: #333;
         outline: none;
         cursor: pointer;
+       
 
         &--icon {
-            height: 3rem;
-            width: 3rem;
+            height: 2rem;
+            width: 2rem;
         }
     }
+}
+
+.last__item {
+    
+    display: flex;
+    position: absolute;
+    bottom: 29rem;
+        flex-direction: column;
+        margin-top: .5rem;
+        margin-left: .8rem;
+    margin-bottom: auto;
 }
 
 .legends {

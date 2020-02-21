@@ -854,7 +854,7 @@ header {
     width: 1rem; }
   .days__more {
     position: absolute;
-    top: 35.5rem;
+    margin-top: 8.4rem;
     background: none;
     width: 2rem;
     height: 2rem;
@@ -865,15 +865,6 @@ header {
     .days__more--icon {
       height: 2rem;
       width: 2rem; }
-
-.last__item {
-  display: flex;
-  position: absolute;
-  bottom: 29rem;
-  flex-direction: column;
-  margin-top: .5rem;
-  margin-left: .8rem;
-  margin-bottom: auto; }
 
 .legends {
   display: flex;
@@ -898,6 +889,9 @@ header {
 
 .legend__orange {
   fill: #ff7730; }
+
+.legend__gray {
+  fill: #777; }
 
 .days li {
   list-style-type: none;

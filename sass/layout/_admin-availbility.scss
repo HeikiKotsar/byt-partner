@@ -139,7 +139,7 @@
 
     &__more {
         position: absolute;
-        top: 35.5rem;
+        margin-top: 8.4rem;
         background: none;
         width: 2rem;
         height: 2rem;
@@ -156,16 +156,6 @@
     }
 }
 
-.last__item {
-    
-    display: flex;
-    position: absolute;
-    bottom: 29rem;
-        flex-direction: column;
-        margin-top: .5rem;
-        margin-left: .8rem;
-    margin-bottom: auto;
-}
 
 .legends {
     display: flex;
@@ -201,6 +191,10 @@
 
     &__orange {
         fill: $color-orange;
+    }
+
+    &__gray {
+        fill: #777;
     }
 }
   

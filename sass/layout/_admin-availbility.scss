@@ -513,6 +513,75 @@
 
 }
 
+.roominfo {
+
+    &__head {
+        margin: 0rem 3rem;
+    }
+
+
+    &__group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+
+        &--label {
+            display: block;
+            margin: 0rem .4rem;
+            font-size: 1.4rem;
+        }
+
+        &--input {
+            width: 14rem;
+            margin: 0rem .4rem;
+            background-color: #eee;
+            border: none;
+            padding: .5rem;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        &--btn {
+            border: none;
+            border-radius: 5px;
+            padding: .7rem;
+            background: $primary-color;
+            color: #fff;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    &__btn {
+        margin-top: 1rem;
+        float: right;
+    }
+
+    &__body {
+        margin: 0rem 3rem;
+
+       
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(8, auto);
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0rem;
+
+        &--input {
+            margin-right: .7rem;
+        }
+    }
+}
+
+
+
 .active--room {
     background-color: $primary-color;
     color: #fff;
@@ -550,3 +619,89 @@
 	color:#ffffff;
 
 }
+
+// Accordian menu
+
+.accordion {
+    width: 100%;
+    margin-top: 1rem;
+    
+    &__input {
+        display: none;
+    }
+}
+
+.box {
+	position: relative;
+	background: white;
+    height: 64px;
+    transition: all .15s ease-in-out;
+}
+.box::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+}
+
+.box-title {
+	width: calc(100% - 10px);
+    height: auto;
+    font-size: 1.5rem;
+	line-height: 64px;
+	padding: 0 1.5rem;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
+}
+.box-content {
+	width: calc(100% - 10px);
+	padding: 1.5rem 1rem;
+	font-size: 11pt;
+	color: rgba(0,0,0,.54);
+	display: none;
+}
+.box-close {
+	position: absolute;
+	height: 64px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	display: none;
+}
+input:checked + .box {
+	height: auto;
+	margin: 16px 0;
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+}
+input:checked + .box .box-title {
+	border-bottom: 1px solid rgba(0,0,0,.18);
+}
+input:checked + .box .box-content,
+input:checked + .box .box-close {
+	display: inline-block;
+}
+.arrows section .box-title {
+	padding-left: 44px;
+	width: calc(100% - 64px);
+}
+.arrows section .box-title:before {
+	position: absolute;
+	display: block;
+	content: '\203a';
+	font-size: 18pt;
+	left: 20px;
+	top: -2px;
+	transition: transform .15s ease-in-out;
+	color: rgba(0,0,0,.54);
+}
+input:checked + section.box .box-title:before {
+	transform: rotate(90deg);
+}
+

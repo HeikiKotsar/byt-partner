@@ -1,0 +1,169 @@
+.chat {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+
+    &__sidebar {
+        flex: 0 0 20%;
+        flex-direction: column;
+        background-color: $primary-color;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    &__content {
+        flex: 1;
+        background-color: #fff;
+        flex-direction: column;
+        height: 60rem;
+        display: flex;
+        font-size: 1.5rem;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    &__area {
+        margin: 2rem;
+        height: 45rem;
+       
+        padding: 1rem;
+        display: flex;
+        flex-direction: column-reverse;
+
+        &--you {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin: .5rem 0rem;
+            margin-left: 25rem;
+            
+            p {
+                background: $primary-color;
+                padding: .2rem 1rem;
+                border-radius: 10px;
+                color: #eee;
+            }
+        }
+
+        &--client {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin: .2rem 0rem;
+            margin-right: 25rem;
+
+            p {
+                background: #ddd;
+                padding: .5rem 1rem;
+                border-radius: 10px;
+                color: #000;
+            }
+        }
+    }
+
+    &__textarea {
+        display: flex;
+        margin: 1rem 2rem;
+
+        textarea {
+            width: 100%;
+            height: 10rem;
+            border-radius: 5px;
+            padding: 1rem;
+            outline: none;
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: .7rem;
+        color: #fff;
+    }
+
+    &__groups {
+        margin: 2rem 1.5rem;
+        color: #fff;
+
+        &--list {
+            padding: .2rem 1rem;
+            font-size: 1.4rem;
+        }
+
+        &--item {
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+
+        &--add {
+            display: flex;
+            align-items: center;
+            padding: .2rem 1rem;
+            text-decoration: none;
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+
+        &--icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-right: .5rem;
+            fill: #fff;
+        }
+
+    }
+
+    &__group {
+        margin: 2rem 1.5rem;
+    }
+
+    &__label {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        margin-top: .5rem;
+    }
+
+    &__btn {
+        position: absolute;
+        margin-left: 13rem;
+        margin-top: .1rem;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        &--icon {
+            height: 1.5rem;
+            width: 1.5rem;
+        }
+    }
+
+    &__input {
+        width: 15rem;
+        padding: .5rem;
+        padding-right: 2rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+
+    &__list {
+        margin: 2rem 1.5rem;
+
+        &--link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+    }
+}

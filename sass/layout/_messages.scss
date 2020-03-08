@@ -1,14 +1,13 @@
 .chat {
     display: flex;
-    border-radius: 5px;
-    box-shadow: 0 0 6px rgba(0,0,0,.16),0 6px 12px rgba(0,0,0,.32);
+    height: auto;
+    
 
     &__sidebar {
         flex: 0 0 20%;
         flex-direction: column;
-        background-color: $primary-color;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
+        background-color: #003B81;
+        
     }
 
     &__content {
@@ -18,13 +17,35 @@
         height: 60rem;
         display: flex;
         font-size: 1.5rem;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
+        
+    }
+
+    &__header {
+        padding: 1.5rem 1rem;
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        li {
+            margin: 0rem 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
 
     &__area {
         margin: 2rem;
-        height: 45rem;
+        height: 40rem;
        
         padding: 1rem;
         display: flex;

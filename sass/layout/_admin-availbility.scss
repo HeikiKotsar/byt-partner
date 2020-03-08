@@ -1,12 +1,11 @@
 .calendar-container {
     padding: 5rem;
     width: 100rem;
-    height: 4rem;
+    height: auto;
     margin: auto;
 }
 
 .calendar {
-
 
     &__head {
         display: flex;
@@ -101,8 +100,175 @@
         color: #666;
         text-align: center;
     }
+
+    &__day {
+        span {
+            display: block;
+        }
+    }
+}
+
+.sevendays {
+    margin: 0;
+    font-size: 1.5rem;
+    display: flex;
+
+    li {
+        display: flex;
+        flex-direction: column;
+
+        list-style: none;
+        width: 14%;
+        color: #666;
+        text-align: center;
+    }
+
+    &__day {
+        background-color: #ddd;
+        padding: 1rem 0rem;
+        span {
+            display: block;
+        }
+    }
+
+    &__oneday {
+       
+        padding: 1rem 0rem;
+        background-color: #ddd;
+        font-size: 1.4rem;
+
+      
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+
+        background-color: #fff;
+        border-radius: 1rem;
+        width: 88.3rem;
+    }
+
+    &__option {
+        padding: .8rem;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    
+}
+
+.schedule, th, td {
+    border: .5px solid #867D7D;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+// .schedule-list {
+//     // position: relative;
+// }
+
+.schedule {
+   width: 100%;
+    
+    &__item {
+        position: absolute;
+        width: 12rem;
+        background-color: $primary-color;
+        padding: 2rem 0rem;
+    
+        height: 8rem;
+        margin-top: 0rem;
+        font-size: 1.2rem;
+        opacity: .9;
+
+        span {
+            color: #fff;
+        }
+
+        &--day {
+            position: absolute;
+            margin: 0rem 1rem;
+            
+            width: 88rem;
+            background-color: $primary-color;
+            padding: 2rem .5rem;
+        
+            height: 8rem;
+            margin-top: 0rem;
+            font-size: 1.2rem;
+            opacity: .9;
+            color: #fff;
+        }
+    }
+
+    td {
+        height: 4rem;
+    }
+}
+
+.realtime {
+    margin-top: 20rem;
+    position: absolute;
+    border: 1.5px solid orange;
+    width: 90rem;
 }
   
+#item-1 {
+    margin-top: 0rem;
+    background-color: $primary-color;
+}
+
+#item-2 {
+    margin-top: 10rem;
+    background-color: blueviolet;
+}
+
+#item-3 {
+    margin-top: 15rem;
+    background-color: burlywood;
+    // height: 20rem;
+}
+
+#dayitem-1 {
+    margin-top: 12rem;
+    background-color: $primary-color;
+}
+
+#dayitem-2 {
+    margin-top: 28rem;
+    background-color: blueviolet;
+}
+
+.timeline {
+    position: absolute;
+    margin-left: -4rem;
+    margin-top: 4.2rem;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        margin: 2rem 0rem;
+        font-size: 1.2rem;
+    }
+}
+
+.timeline--2 {
+    position: absolute;
+    margin-left: -4rem;
+    margin-top: 1rem;
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        margin: 2rem 0rem;
+        font-size: 1.2rem;
+    }
+}
 
 
 .days {
@@ -271,6 +437,10 @@
             outline: none;
 
         }
+    }
+
+    &__right {
+        margin-right: 1rem;
     }
 
     &__grid {

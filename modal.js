@@ -1,21 +1,20 @@
-// Reservation detail modal
-const reservDetail = document.querySelector('#detail');
-const detailBtn = document.querySelector('#detail-btn');
-const closeDetail = document.querySelector('.close-detail');
+// New
+const newBronn = document.querySelector('#new-bronn');
+const newBtn = document.querySelector('#new-btn');
+const closeBronn = document.querySelector('.close-bronn');
 
-detailBtn.addEventListener('click', openDetail);
-closeDetail.addEventListener('click', closeReserv);
+newBtn.addEventListener('click', openNewBronn);
+closeBronn.addEventListener('click', closeNewBronn);
 
 // Open
-function openDetail() {
-  reservDetail.style.display = 'block';
+function openNewBronn() {
+  newBronn.style.display = 'block';
 }
 
-//  Close
-function closeReserv() {
- reservDetail.style.display = 'none';
+// Close
+function closeNewBronn() {
+  newBronn.style.display = 'none';
 }
-
 
 // Bronnid
 const modal = document.querySelector('#my-modal');
@@ -44,23 +43,28 @@ const closeBtn = document.querySelector('.close');
     }
 }
 
-// New
-const newBronn = document.querySelector('#new-bronn');
-const newBtn = document.querySelector('#new-btn');
-const closeBronn = document.querySelector('.close-bronn');
+// Reservation detail modal
+const reservDetail = document.querySelector('#detail');
+const detailBtn = document.querySelector('#detail-btn');
+const closeDetail = document.querySelector('.close-detail');
 
-newBtn.addEventListener('click', openNewBronn);
-closeBronn.addEventListener('click', closeNewBronn);
+detailBtn.addEventListener('click', openDetail);
+closeDetail.addEventListener('click', closeReserv);
 
 // Open
-function openNewBronn() {
-  newBronn.style.display = 'block';
+function openDetail() {
+  reservDetail.style.display = 'block';
 }
 
-// Close
-function closeNewBronn() {
-  newBronn.style.display = 'none';
+//  Close
+function closeReserv() {
+ reservDetail.style.display = 'none';
 }
+
+
+
+
+
 
 
  

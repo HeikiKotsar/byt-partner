@@ -1281,8 +1281,7 @@ header {
   grid-template-columns: auto auto auto auto; }
 
 .box__item {
-  width: 20rem;
-  height: auto; }
+  width: 20rem; }
 
 .box__info {
   margin-left: 1rem; }
@@ -1291,7 +1290,8 @@ header {
 
 .box__content {
   padding: .5rem .4rem;
-  background-color: #eee; }
+  background-color: #eee;
+  height: 20rem; }
 
 .box__users {
   display: grid;
@@ -1308,11 +1308,18 @@ header {
   border-radius: 5px;
   box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24); }
   .box__user--icon {
-    height: 5rem;
-    width: 5rem;
+    height: 3rem;
+    width: 3rem;
     fill: #2998ff; }
   .box__user span {
-    margin: -.4rem; }
+    margin: -.3rem;
+    font-size: 1.2rem; }
+
+.box__grey-border {
+  border: 2px solid #666; }
+
+.box__green-border {
+  border: 2px solid #55c57a; }
 
 .date {
   display: inline-block;

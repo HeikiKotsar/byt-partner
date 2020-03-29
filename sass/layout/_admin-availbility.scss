@@ -750,6 +750,97 @@
     }
 }
 
+// KASTID
+
+.box {
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: auto auto auto auto; 
+    }
+
+    &__item {
+        width: 20rem;
+        height: auto;
+    }
+
+    &__info {
+        margin-left: 1rem;
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__content {
+        padding: .5rem .4rem;
+        background-color: #eee;
+    }
+
+    &__users {
+        display: grid;
+        grid-template-columns: auto auto auto; 
+
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: .4rem;
+        width: 6rem;
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+
+        &--icon {
+            height: 5rem;
+            width: 5rem;
+            fill: $primary-color;
+        }
+
+        span {
+            margin: -.4rem;
+        }
+    }
+}
+
+.date {
+   display: inline-block;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &__group {
+        margin: 0rem 1rem;
+
+        label {
+            display: block;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__flex {
+        display: flex;
+
+       
+    }
+
+    &__btn {
+        margin-top: 2rem;
+
+        button {
+            background-color: $primary-color;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+            padding: .4rem 1rem; 
+        }
+    }
+}
+
 
 
 .active--room {

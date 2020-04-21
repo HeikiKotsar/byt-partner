@@ -117,23 +117,93 @@
                                                 <button class="change-btn"> &#9998; </button>
                                             </div>
                                         </div>
-                                        <div class="property-item__container">
-                                            <div class="hotel-list">
-                                                <div class="hotel__item">
-                                                    <p class="hotel__item--text">Toa hind oopaevas</p>
-                                                    <p class="hotel__item--number">24</p>
+                                        <div class="property-item__flex">
+                                            <div class="property-item__container">
+                                                <div class="hotel-list">
+                                                    <div class="hotel__item">
+                                                        <p class="hotel__item--text">Toa hind oopaevas</p>
+                                                        <p class="hotel__item--number">24</p>
+                                                    </div>
+                                                    <div class="hotel__item">
+                                                        <p class="hotel__item--text">Paketi hind oopaevas</p>
+                                                        <p class="hotel__item--number">20</p>
+                                                    </div>
+                                                    <div class="hotel__item">
+                                                        <p class="hotel__item--text">Tubade arv</p>
+                                                        <p class="hotel__item--number">33</p>
+                                                    </div>
                                                 </div>
-                                                <div class="hotel__item">
-                                                    <p class="hotel__item--text">Paketi hind oopaevas</p>
-                                                    <p class="hotel__item--number">20</p>
-                                                </div>
-                                                <div class="hotel__item">
-                                                    <p class="hotel__item--text">Tubade arv</p>
-                                                    <p class="hotel__item--number">33</p>
+                                                <div class="room-desc">
+                                                    <p>Kirjeldus: Wifi, 2 voodit</p>
                                                 </div>
                                             </div>
-                                            <div class="room-desc">
-                                                <p>Kirjeldus: Wifi, 2 voodit</p>
+                                            <div class="change">
+                                                <input type="checkbox" id="show_1" />
+                                                <label for="show_1">
+                                                   <div class="clicker" tabindex="1">
+                                                        Vaata täpsemalt
+                                                   </div>
+                                                </label>
+                                                <div class="hiddendiv">
+                                                   <div class="monthly">
+                                                       <div class="monthly__head">
+                                                        <div class="monthly__year">
+                                                            <button>
+                                                                <svg class="monthly__icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-arrow-left2"></use>
+                                                                </svg>
+                                                            </button>
+                                                            <span>2020</span>
+                                                            <button>
+                                                                <svg class="monthly__icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-arrow-right2"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="monthly__nav">
+                                                            <a class="monthly__nav--active" href="#">Monthly</a>
+                                                            <a href="#">Daily</a>
+                                                        </div>
+                                                        <div class="monthly__edit">
+                                                            <button>
+                                                                <svg class="monthly__icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-edit-pencil"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                        <div class="monthly__close">
+                                                            <button>
+                                                                <svg class="monthly__icon-close">
+                                                                    <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                       </div>
+                                                       <div class="monthly__body">
+                                                            <div class="monthly__months">
+                                                                <div class="monthly__months--item monthly__months--active">Jan</div>
+                                                                <div class="monthly__months--item monthly__months--active">Veb</div>
+                                                                <div class="monthly__months--item">Mar</div>
+                                                                <div class="monthly__months--item">Apr</div>
+                                                                <div class="monthly__months--item">May</div>
+                                                                <div class="monthly__months--item">Jul</div>
+                                                                <div class="monthly__months--item">Jun</div>
+                                                                <div class="monthly__months--item">Aug</div>
+                                                                <div class="monthly__months--item">Sep</div>
+                                                                <div class="monthly__months--item monthly__months--active">Okt</div>
+                                                                <div class="monthly__months--item monthly__months--active">Nov</div>
+                                                                <div class="monthly__months--item">Det</div>
+                                                            </div>
+                                                            <div class="monthly__group">
+                                                                <div class="monthly__input">
+                                                                    <label for="hinnamuutus">Määra hinnamuutus</label>
+                                                                    <input type="number">
+                                                                </div>
+                                                                <button>Save</button>
+                                                            </div>
+                                                       </div>
+                                                   </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="roomtype">
@@ -170,6 +240,245 @@
                                         <button class="btn--green btn--2">&#43; Add room</button>
                                     </div>
                                 </div>
+
+                                    <!-- Kalendri ulejaanud vaated -->
+                                        <!-- <div class="hiddendiv">
+                                            <div class="monthly">
+                                                <div class="monthly__head">
+                                                <div class="monthly__year">
+                                                    <button>
+                                                        <svg class="monthly__icon">
+                                                            <use xlink:href="img/2icons.svg#icon-arrow-left2"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <span>2020</span>
+                                                    <button>
+                                                        <svg class="monthly__icon">
+                                                            <use xlink:href="img/2icons.svg#icon-arrow-right2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="monthly__nav">
+                                                    <a class="monthly__nav--active" href="#">Monthly</a>
+                                                    <a href="#">Daily</a>
+                                                </div>
+                                                <div class="monthly__edit">
+                                                    <button>
+                                                        <svg class="monthly__icon">
+                                                            <use xlink:href="img/2icons.svg#icon-edit-pencil"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="monthly__close">
+                                                    <button>
+                                                        <svg class="monthly__icon-close">
+                                                            <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                </div>
+                                                <div class="monthly__body">
+                                                    <div class="monthly__months">
+                                                        <div class="monthly__months--item">Jan
+                                                            <span class="monthly__months--procent">20%</span>
+                                                        </div>
+                                                        <div class="monthly__months--item">Veb
+                                                            <span class="monthly__months--procent">20%</span>
+                                                        </div>
+                                                        <div class="monthly__months--item">Mar</div>
+                                                        <div class="monthly__months--item">Apr</div>
+                                                        <div class="monthly__months--item">May</div>
+                                                        <div class="monthly__months--item">Jul</div>
+                                                        <div class="monthly__months--item">Jun</div>
+                                                        <div class="monthly__months--item">Aug</div>
+                                                        <div class="monthly__months--item">Sep</div>
+                                                        <div class="monthly__months--item">Okt</div>
+                                                        <div class="monthly__months--item">Nov
+                                                            <span class="monthly__months--procent">20%</span>
+                                                        </div>
+                                                        <div class="monthly__months--item">Det
+                                                            <span class="monthly__months--procent">20%</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="monthly__group">
+                                                        <div class="monthly__input">
+                                                            <label for="hinnamuutus">Määra hinnamuutus</label>
+                                                            <input type="number">
+                                                        </div>
+                                                        <button>Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <!-- <div class="hiddendiv">
+                                            <div class="monthly">
+                                                <div class="monthly__head">
+                                                <div class="monthly__year">
+                                                    <button>
+                                                        <svg class="monthly__icon">
+                                                            <use xlink:href="img/2icons.svg#icon-arrow-left2"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <span>2021</span>
+                                                    <button>
+                                                        <svg class="monthly__icon">
+                                                            <use xlink:href="img/2icons.svg#icon-arrow-right2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="monthly__nav">
+                                                    <a class="monthly__nav--active" href="#">Monthly</a>
+                                                    <a href="#">Daily</a>
+                                                </div>
+                                                <div class="monthly__edit">
+                                                    <button>
+                                                        <svg class="monthly__icon">
+                                                            <use xlink:href="img/2icons.svg#icon-edit-pencil"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="monthly__close">
+                                                    <button>
+                                                        <svg class="monthly__icon-close">
+                                                            <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                </div>
+                                                <div class="monthly__body">
+                                                    <div class="monthly__months">
+                                                        <div class="monthly__months--item">Jan
+                                                           
+                                                        </div>
+                                                        <div class="monthly__months--item">Veb
+                                                            
+                                                        </div>
+                                                        <div class="monthly__months--item">Mar</div>
+                                                        <div class="monthly__months--item">Apr</div>
+                                                        <div class="monthly__months--item">May</div>
+                                                        <div class="monthly__months--item">Jul</div>
+                                                        <div class="monthly__months--item">Jun</div>
+                                                        <div class="monthly__months--item">Aug</div>
+                                                        <div class="monthly__months--item">Sep</div>
+                                                        <div class="monthly__months--item">Okt</div>
+                                                        <div class="monthly__months--item">Nov
+                                                           
+                                                        </div>
+                                                        <div class="monthly__months--item">Det
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="monthly__group">
+                                                        <div class="monthly__input">
+                                                            <label for="hinnamuutus">Määra hinnamuutus</label>
+                                                            <input type="number">
+                                                        </div>
+                                                        <button>Save</button>
+                                                    </div>
+                                                    <div class="monthly__input">
+                                                        <label for="hinnamuutus">Baashind</label>
+                                                        <input type="number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <!-- <div class="hiddendiv">
+                                            <div class="monthly">
+                                                <div class="monthly__head">
+                                                <div class="monthly__nav">
+                                                    <a  href="#">Monthly</a>
+                                                    <a class="monthly__nav--active" href="#">Daily</a>
+                                                </div>
+                                                <div class="monthly__edit">
+                                                    <button>
+                                                        <svg class="monthly__icon">
+                                                            <use xlink:href="img/2icons.svg#icon-edit-pencil"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="monthly__close">
+                                                    <button>
+                                                        <svg class="monthly__icon-close">
+                                                            <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                </div>
+                                                <div class="monthly__body">
+                                                    <p>Repeat on</p>
+                                                    <div class="monthly__days">
+                                                        <div class="monthly__days--item  monthly__months--active">M</div>
+                                                        <div class="monthly__days--item  monthly__months--active">T</div>
+                                                        <div class="monthly__days--item  monthly__months--active">W</div>
+                                                        <div class="monthly__days--item  monthly__months--active">T</div>
+                                                        <div class="monthly__days--item">F</div>
+                                                        <div class="monthly__days--item">S</div>
+                                                        <div class="monthly__days--item">S</div>
+                                                    </div>
+                                                    <div class="monthly__group">
+                                                        <div class="monthly__input">
+                                                            <label for="hinnamuutus">Määra hinnamuutus</label>
+                                                            <input type="number">
+                                                        </div>
+                                                        <button>Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="hiddendiv">
+                                            <div class="monthly">
+                                                <div class="monthly__head">
+                                                <div class="monthly__nav">
+                                                    <a  href="#">Monthly</a>
+                                                    <a class="monthly__nav--active" href="#">Daily</a>
+                                                </div>
+                                                <div class="monthly__edit">
+                                                    <button>
+                                                        <svg class="monthly__icon">
+                                                            <use xlink:href="img/2icons.svg#icon-edit-pencil"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <div class="monthly__close">
+                                                    <button>
+                                                        <svg class="monthly__icon-close">
+                                                            <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                </div>
+                                                <div class="monthly__body">
+                                                    <p>Repeat on</p>
+                                                    <div class="monthly__days">
+                                                        <div class="monthly__days--item">M
+                                                            <span class="monthly__days--procent">20%</span>
+                                                        </div>
+                                                        <div class="monthly__days--item">T
+                                                            <span class="monthly__days--procent">20%</span>
+                                                        </div>
+                                                        <div class="monthly__days--item">W
+                                                            <span class="monthly__days--procent">20%</span>
+                                                        </div>
+                                                        <div class="monthly__days--item">T
+                                                            <span class="monthly__days--procent">20%</span>
+                                                        </div>
+                                                        <div class="monthly__days--item">F</div>
+                                                        <div class="monthly__days--item">S</div>
+                                                        <div class="monthly__days--item">S</div>
+                                                    </div>
+                                                    <div class="monthly__group">
+                                                        <div class="monthly__input">
+                                                            <label for="hinnamuutus">Määra hinnamuutus</label>
+                                                            <input type="number">
+                                                        </div>
+                                                        <button>Save</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                 <div class="property-container">
                                     <div class="property-header">
@@ -216,6 +525,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            
                                         </div>
                                         <button class="btn--green btn--2">&#43; Add room</button>
                                     </div>

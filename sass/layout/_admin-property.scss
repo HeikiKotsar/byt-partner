@@ -65,6 +65,10 @@
         margin-bottom: 0.5rem;
     }
 
+    &__flex {
+        display: flex;
+    }
+
     &__desc {
         width: 40rem;
         height: 10rem;
@@ -147,6 +151,226 @@
     }
 }
 
+.change {
+    margin-top: .5rem;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.clicker {
+    outline: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: $primary-color;
+    cursor: pointer;
+}
+
+.hiddendiv {
+    margin-top: -1rem;
+    margin-left: 1rem;
+   
+    height: 5rem;
+    width: 20rem;
+    z-index: 2000;
+    
+}
+
+div.change div.hiddendiv ul.opere li {
+    display: inline;
+}
+  
+
+[id^=show] {
+    display: none;
+}
+  
+[id^=show]:checked ~ .hiddendiv {
+    display: block;
+}
+  
+[id^=show]:not(:checked) ~ .hiddendiv {
+    display: none;
+}
+
+.monthly {
+
+
+    &__head {
+        display: flex;
+        align-items: center;
+        padding: .2rem .5rem;
+        background-color: $primary-color;
+        border-top-right-radius: 7px;
+        border-top-left-radius: 7px;
+    }
+
+    &__icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: #fff;
+    }
+
+   
+
+    &__year {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+
+        button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            margin: 0rem .3rem;
+        }
+
+        span {
+           margin-bottom: .2rem;
+            font-size: 1.2rem;
+            color: #fff;
+        }
+    }
+
+    &__nav {
+        margin-right: 1rem;
+        font-size: 1.2rem;
+        margin-bottom: .2rem;
+
+        a {
+            text-decoration: none;
+            margin: 0rem .2rem;
+            color: #fff;
+        }
+
+        &--active {
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    &__edit {
+        margin-right: auto;
+        button {
+            border: none;
+            background: none;
+           
+            cursor: pointer;
+        }
+    }
+
+    &__close {
+
+        button {
+            margin-left: .5rem;
+            margin-bottom: .7rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+    }   
+
+    &__icon-close {
+        width: .8rem;
+        height: .8rem;
+        fill: #fff;
+    }
+
+    &__body {
+        background: #eee;
+        padding: .5rem .7rem;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+
+    &__months {
+        width: 100%;
+        
+        text-align: center;
+        padding: 0rem 1.2rem;
+        display: grid;
+        grid-template-columns: auto auto auto auto; 
+
+        &--item {
+            position: relative;
+            font-size: 1.2rem;
+            color: #333;
+            cursor: pointer;
+        }
+
+        &--active {
+            background: $primary-color;
+            border-radius: 50px;
+            margin: .2rem;
+            color: #fff;
+        }
+
+        &--procent {
+            position: absolute;
+            font-size: .8rem;
+            padding: .1rem .2rem;
+            border-radius: 10px;
+            background: $primary-color;
+            opacity: 0.9;
+            color: #fff;
+        }
+    }
+
+    &__group {
+        margin-top: .7rem;
+        display: flex;
+        align-items: center;
+
+        button {
+            background: $primary-color;
+            border: none;
+            border-radius: 5px;
+            padding: .4rem .6rem;
+            font-size: 1.2rem;
+            color: #fff;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    &__input {
+        display: flex;
+        align-items: center;
+        
+        margin-right: auto;
+
+        input {
+            width: 4rem;
+            height: 2rem;
+            border-radius: 5px;
+            border: none;
+            margin-left: .5rem;
+            outline: none;
+        }
+    }
+
+    &__days {
+        text-align: center;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto;
+        margin-top: .5rem; 
+
+        &--item {
+            position: relative;
+        }
+
+        &--procent {
+            position: absolute;
+            background-color: $primary-color;
+            border-radius: 50px;
+            color: #fff;
+            padding: .1rem;
+            margin-top: -.5rem;
+            font-size: .8rem;
+        }
+    }
+}
+
+
+    
 // Keskuse kirjeldus
 
 .centre__container {

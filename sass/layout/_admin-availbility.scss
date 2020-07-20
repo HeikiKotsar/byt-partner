@@ -976,3 +976,131 @@ input:checked + section.box .box-title:before {
 	transform: rotate(90deg);
 }
 
+.dropdownBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.dropdown-projects{
+    width:130px;
+    display:none;
+    background: $primary-color;
+    border-radius: 5px;
+    color: #fff;
+    flex-direction:column;
+    z-index:10;
+    position:absolute;
+    // left:-10px;
+    top: -37px;
+
+    &__date {
+        display: flex;
+        align-items: center;
+        padding: .5rem;
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0rem 1rem;
+        fill: #fff;
+    }
+
+    // &__content {
+    //     display: none;
+    //     position: absolute;
+    //     background-color: #f9f9f9;
+    //     min-width: 160px;
+    //     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    //     z-index: 1;
+
+    //     a {
+    //         color: black;
+    //         padding: 12px 16px;
+    //         text-decoration: none;
+    //         display: block;
+    //         text-align: left;
+    //     }
+    // }
+  }
+
+.dropdown-projects__link:hover .dropdown-projects__content {
+    display: block;
+}
+
+  .active1{
+    display:flex;
+  }
+  .dropdown-projects a{
+    font-size: 1.2rem;
+    text-align:center;
+    color: #fff;
+    font-weight:bold;
+    cursor:pointer;
+    box-sizing:border-box;
+    border-radius: 5px;
+    padding: 2px 5px;
+    width:100%;
+  }
+  .dropdown-projects a:hover{
+    background-color:rgba(0,0,0,0.2);
+  }
+
+
+.transfer {
+  position: relative;
+  display: inline-block;
+
+  &__link {
+      margin-left: .5rem;
+      display: flex;
+      align-items: center;
+  }
+
+  &__icon {
+      height: 1.2rem;
+      width: 1.2rem;
+      margin-left: .2rem;
+      fill: #fff;
+  }
+}
+
+.transfer-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  top: -2rem;
+  left: 12rem;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background: $primary-color;
+  z-index: 1;
+  overflow: auto;
+  height: 10rem;
+
+
+}
+
+.transfer-content::-webkit-scrollbar {
+    width: .7em;    
+}
+
+.transfer-content::-webkit-scrollbar-thumb {
+    background-color:rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.transfer-content a {
+  font-size: 1.2rem;
+  text-align:center;
+  padding: 2px 5px;
+  text-decoration: none;
+  display: block;
+}
+
+.transfer-content a:hover {background-color:rgba(0,0,0,0.2);}
+
+.transfer:hover .transfer-content {display: block;}

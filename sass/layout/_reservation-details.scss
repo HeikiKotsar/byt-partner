@@ -12,6 +12,24 @@
     &__head {
         padding: 1rem 2rem;
         border-bottom: 2px solid $primary-color;
+        display: flex;
+        align-items: center;
+
+        h2 {
+            margin-right: auto;
+        }
+
+        button {
+            border: none;
+            padding: .5rem .7rem;
+            cursor: pointer;
+            border-radius: 5px;
+
+            &:hover {
+                background: $primary-color;
+                color: #fff;
+            }
+        }
     }
 
     &__body {
@@ -36,6 +54,13 @@
     &__guest {
         display: flex;
         align-items: center;
+        width: 18rem;
+    }
+
+    &__guest_2 {
+        display: flex;
+        align-items: center;
+        width: 22rem;
     }
 
     &__left {
@@ -56,4 +81,104 @@
     &__button1 {
         margin-right: auto;
     }
+
+    &__edit {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        &--head {
+            display: flex;
+            align-items: center;
+            width: 22rem;
+
+            h2 {
+                margin-right: auto;
+            }
+        }
+
+        &--icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: $primary-color;
+        }
+
+        button {
+            border: none;
+            background: none;
+            margin: 0rem .5rem;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    &__add {
+        margin-top: 1rem;
+        width: 30rem;
+        display: flex;
+
+
+        &--icon {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin-left: .5rem;
+            fill: #fff;
+        }
+
+        &--list {
+            list-style: none;
+            text-align: center;
+        }
+
+        &--item {
+            padding: .3rem;
+            background: $primary-color;
+            border: 1px solid #eee;
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            &:hover {
+                background: #4181FF;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__hidden {
+       overflow: auto;
+        height: 10rem;
+        width: 20rem;
+        z-index: 2000;
+        margin-left: -.4rem;
+    }
+}
+
+.clicker_3 {
+    outline: none;
+    width: 12rem;
+    padding: .3rem 1rem;
+    font-size: 1.2rem;
+    background: $primary-color;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+[id^=show_3] {
+    display: none;
+}
+  
+[id^=show_3]:checked ~ .reserv__hidden {
+    display: block;
+}
+  
+[id^=show_3]:not(:checked) ~ .reserv__hidden {
+    display: none;
 }

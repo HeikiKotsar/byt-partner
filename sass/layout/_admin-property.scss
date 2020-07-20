@@ -24,7 +24,7 @@
 }
 
 .property-container {
-    width: 60%;
+    width: 90rem;
     margin: 8rem auto;
     box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
     // border: 1px solid $color-grey-dark-3;
@@ -157,12 +157,118 @@
     display: flex;
 }
 
+.addroom {
+    margin-top: -.6rem;
+    margin-left: 1rem;
+    width: 20rem;
+    
+    padding: 1rem;
+    // display: flex;
+    // flex-direction: column;
+    // text-align: center;
+    // align-items: center;
+
+    &__group {
+        margin-bottom: 1.2rem;
+
+    }
+
+    &__add {
+        display: flex;
+        justify-content: center;
+
+        input {
+            width: 12rem;
+            border: none;
+            border-bottom: 2px solid $color-green-dark;
+            outline: none;
+            padding-left: .5rem;
+        }
+
+        button {
+            background: none;
+            border: none;
+            margin-left: .4rem;
+            margin-top: .2rem;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+
+    &__list {
+        height: 14rem;
+        padding: 1rem;
+        overflow: auto;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 1.5rem;
+            margin-right: auto;
+           
+        }
+
+        a {
+            margin-top: .5rem;
+            text-decoration: none;
+        }
+    }
+
+    &__delete {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: #FF4136;
+    }
+
+    &__list::-webkit-scrollbar {
+        width: 1em;    
+    }
+
+    &__list::-webkit-scrollbar-thumb {
+        
+        background: $primary-color;
+        border-radius: 5px;
+    }
+
+    &__icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: $color-green-dark;
+    }
+}
+
 .clicker {
     outline: none;
-    text-align: center;
+    // text-align: center;
     font-size: 1.2rem;
     color: $primary-color;
     cursor: pointer;
+}
+
+.clicker_2 {
+    outline: none;
+    text-align: center;
+    background: $primary-color;
+    width: 8rem;
+    margin: auto;
+    padding: .2rem .5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    margin-bottom: .2rem;
+
+    &__icon {
+        height: 1.2rem;
+        width: 1.2rem;
+        margin-right: .5rem;
+        fill: #fff;
+    }
 }
 
 .hiddendiv {
@@ -172,6 +278,18 @@
     height: 5rem;
     width: 20rem;
     z-index: 2000;
+    
+}
+
+.hiddendiv_2 {
+    margin-top: 1rem;
+    // margin-left: .2rem;
+    padding: .5rem;
+    height: 5rem;
+    width: 17rem;
+    margin: auto;
+    z-index: 2000;
+    // background: red;
     
 }
 
@@ -192,9 +310,19 @@ div.change div.hiddendiv ul.opere li {
     display: none;
 }
 
+[id^=show_2] {
+    display: none;
+}
+  
+[id^=show_2]:checked ~ .hiddendiv_2 {
+    display: block;
+}
+  
+[id^=show_2]:not(:checked) ~ .hiddendiv_2 {
+    display: none;
+}
+
 .monthly {
-
-
     &__head {
         display: flex;
         align-items: center;
@@ -210,7 +338,6 @@ div.change div.hiddendiv ul.opere li {
         fill: #fff;
     }
 
-   
 
     &__year {
         display: flex;
@@ -493,11 +620,11 @@ div.change div.hiddendiv ul.opere li {
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     grid-gap: 7rem;
 
-    &__item {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    }
+    // &__item {
+    //     // // background-color: #fff;
+    //     // border-radius: 10px;
+    //     // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    // }
 
     &__btn {
         float: right;
@@ -512,6 +639,17 @@ div.change div.hiddendiv ul.opere li {
         }
     }
 
+    &__button {
+        
+        background: $primary-color;
+        padding: .7rem 1.2rem;
+        border-radius: 10px;
+        width: 10rem;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
     &__desc {
         padding: 1rem 1.5rem;
     }
@@ -521,6 +659,11 @@ div.change div.hiddendiv ul.opere li {
         align-items: center;
         border-bottom: 2px solid $primary-color;
         padding: 1rem 1.5rem;
+        background-color: #fff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+
         
 
         h2 {
@@ -529,7 +672,12 @@ div.change div.hiddendiv ul.opere li {
     }
 
     &__body {
+        margin-top: .4rem;
         padding: 1rem 1.5rem;
+        background-color: #fff;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
     }
 
     .package__content {
@@ -564,18 +712,27 @@ div.change div.hiddendiv ul.opere li {
     }
 
     &__group {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0rem;
+
         label {
             display: block;
             font-size: 1.5rem;
+            margin-right: auto;
+        }
+
+        &--kehtivus {
+            margin-top: 1rem;
+            margin-bottom: -1.2rem;
         }
 
         &--input {
             font-size: 1.6rem;
             padding: .7rem;
-            width: 100%;
-            margin-bottom: 1.5rem;
             border-radius: 5px;
             border: none;
+            width: 6rem;
             background-color: #eee;
 
             &--2 {
@@ -584,9 +741,19 @@ div.change div.hiddendiv ul.opere li {
                 border-radius: 5px;
                 border: none;
                 margin: 0rem 1rem;
-                width: 8rem;
+                width: 15rem;
                 background-color: #eee;
             }
+        }
+
+        &--marginright {
+            margin-right: 1rem;
+        }
+
+        &--column {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.6rem;
         }
 
     }
@@ -601,7 +768,83 @@ div.change div.hiddendiv ul.opere li {
     &__hind {
         width: 20rem;
     }
+
+    &__accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: auto auto;
+        // background-color: red;
+        padding: .5rem 1rem;
+        height: 15rem;
+        overflow: auto;
+
+        
+    }
+
+    &__list::-webkit-scrollbar {
+        width: .7em;    
+    }
+
+    &__list::-webkit-scrollbar-thumb {
+        
+        background: $primary-color;
+        border-radius: 5px;
+    }
+
+    &__added {
+        padding: 1rem;
+        background: #fff;
+        box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        &--list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: .5rem 1rem;
+        }
+
+        &--item {
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            margin: 0rem .5rem;
+
+        }
+    
+        &--icon {
+            width: 1.4rem;
+            height: 1.4rem;
+            fill: $primary-color;
+            margin-right: .2rem;
+        }
+    }
+
+    
+    
 }
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
 
 
 .dropdown-check-list {
@@ -664,4 +907,205 @@ div.change div.hiddendiv ul.opere li {
     border-radius: 5px;
     border: none;
     background-color: #eee;
-  }
+}
+
+// CHECKMARK
+
+.container-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 1rem;
+}
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #eee;
+    border-radius: 6px;
+}
+
+.container-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+// Teenused
+
+.teenused {
+    
+    margin: 5rem auto;
+    width: 80rem;
+
+    &__head {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        &--input {
+            padding: .5rem;
+            border: none;
+            width: 20rem;
+            background: none;
+            border-bottom: 2px solid #55c57a;
+            outline: none;
+
+            &--2 {
+                width: 7rem;
+                padding: .5rem;
+                border: none;
+                background: none;
+                border-bottom: 2px solid #55c57a;
+                outline: none;
+            }
+        }
+    }
+
+    &__valitav {
+        margin-top: 1rem;
+        padding: .5rem;
+        background: none;
+        border: none;
+        outline: none;
+        border: 2px solid #55c57a;
+
+        &--2 {
+            padding: .1rem;
+            background: none;
+            border: none;
+            outline: none;
+            border: 2px solid #55c57a;
+        }
+    }
+
+    &__body {
+        margin-top: 2rem;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50rem;
+        font-size: 1.6rem;
+        border-bottom: 2px solid #55c57a;
+
+        p {
+            margin: 0rem 1.5rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 58rem;
+        margin-bottom: .6rem;
+        font-size: 1.4rem;
+
+        &--desc {
+            width: 27rem;
+            // background: red;
+            padding: 0rem 1.2rem;
+        }
+
+        &--icon {
+            // margin-top: .5rem;
+            width: 1.1rem;
+            height: 1.1rem;
+            fill: #55c57a;
+        }
+
+        &--num {
+            width: 17rem;
+            // background: blue;
+            text-align: center;
+        }
+
+        &--cost {
+            width: 17rem;
+            // background: purple;
+            margin-left: 5rem;
+            
+            text-align: center;
+        }
+    }
+}
+
+// Toitlustuts
+
+.toit {
+    display: flex;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: .8rem;
+
+    padding: 1rem;
+
+    &__checklist {
+        width: 15rem;
+    }
+
+    &__count {
+        width: 27rem;
+    }
+
+    &__input {
+        margin-left: 2rem;
+    }
+}

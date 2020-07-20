@@ -137,11 +137,13 @@
                                                     <p>Kirjeldus: Wifi, 2 voodit</p>
                                                 </div>
                                             </div>
+                                            
+                                            <!-- CHANGE -->
                                             <div class="change">
                                                 <input type="checkbox" id="show_1" />
                                                 <label for="show_1">
                                                    <div class="clicker" tabindex="1">
-                                                        Vaata täpsemalt
+                                                        Lisa kuupäevad
                                                    </div>
                                                 </label>
                                                 <div class="hiddendiv">
@@ -203,8 +205,93 @@
                                                             </div>
                                                        </div>
                                                    </div>
+                                                   
                                                 </div>
                                             </div>
+                                            <!-- Add room -->
+                                            <div class="addroom">
+                                                <input type="checkbox" id="show_2" />
+                                                <label for="show_2">
+                                                   <div class="clicker_2" tabindex="2">
+                                                        <svg class="clicker_2__icon">
+                                                            <use xlink:href="img/sprite.svg#icon-plus-alt"></use>
+                                                        </svg>
+                                                        Lisa tuba
+                                                   </div>
+                                                </label>
+                                                <div class="hiddendiv_2">
+                                                    <div class="addroom__group">
+                                                        <div class="addroom__add">
+                                                            <input type="text" placeholder="Lisa tuba">
+                                                            <button>
+                                                                <svg class="addroom__icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkmark-outline"></use>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="addroom__list">
+                                                        <div class="addroom__item">
+                                                            <span>Tere</span>
+                                                            <a href="#">
+                                                                <svg class="addroom__delete">
+                                                                    <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="addroom__item">
+                                                            <span>Tere</span>
+                                                            <a href="#">
+                                                                <svg class="addroom__delete">
+                                                                    <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="addroom__item">
+                                                            <span>Tere</span>
+                                                            <a href="#">
+                                                                <svg class="addroom__delete">
+                                                                    <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="addroom__item">
+                                                            <span>Tere</span>
+                                                            <a href="#">
+                                                                <svg class="addroom__delete">
+                                                                    <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="addroom__item">
+                                                            <span>Tere</span>
+                                                            <a href="#">
+                                                                <svg class="addroom__delete">
+                                                                    <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="addroom__item">
+                                                            <span>Tere</span>
+                                                            <a href="#">
+                                                                <svg class="addroom__delete">
+                                                                    <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                        <div class="addroom__item">
+                                                            <span>Tere</span>
+                                                            <a href="#">
+                                                                <svg class="addroom__delete">
+                                                                    <use xlink:href="img/2icons.svg#icon-cross"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            
                                         </div>
                                         <div class="roomtype">
                                             <div class="form__group">
@@ -553,12 +640,58 @@
                                     <div class="centre__text">
                                         <h2 class="heading-tertiary">Info toitlustuse kohta</h2>
                                         <p class="paragraph">Millised on teie võimalused seotud toitlustusega, kas on kindlad kellaajad, kas toitlust on paketis sees jne.</p>
+                                        <div class="toit">
+                                            <div class="toit__group">
+                                                <div class="toit__checklist">
+                                                    <h2>Majutuse sees</h2>
+                                                    <div class="toit__checkbox">
+                                                        <label class="container-checkbox">Hommikusöök
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="toit__checkbox">
+                                                        <label class="container-checkbox">Lõunasöök
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="toit__checkbox">
+                                                        <label class="container-checkbox">Õhtusöök
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="toit__group">
+                                                <h2>Hinnad</h2>
+                                                <div class="toit__count">
+                                                    <div class="package__group">
+                                                        <label for="hind">Hommikusöök</label>
+                                                        <input type="number" class="package__group--input" placeholder="">
+                                                        <label for="hind">/inimese kohta</label>
+                                                    </div>
+                                                    <div class="package__group">
+                                                        <label for="hind">Lõunasöök</label>
+                                                        <input type="number" class="package__group--input" placeholder="">
+                                                        <label for="hind">/inimese kohta</label>
+                                                    </div>
+                                                    <div class="package__group">
+                                                        <label for="hind">Õhtusöök</label>
+                                                        <input type="number" class="package__group--input" placeholder="">
+                                                        <label for="hind">/inimese kohta</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="centre__desc">
                                         <textarea class="centre__textarea" name="text" id="" cols="64" rows="10"></textarea>
                                         <button class="centre__btn"> &#9998; </button>
                                     </div>
                                 </div>
+
 
                                 <div class="centre u-margin-top-small">
                                     <div class="centre__text">
@@ -682,148 +815,422 @@
                                 </div>
                         </form>
                     </div>
-                    <div class="tab-pane" id="paketid">
-                            <div class="package__container">
-                                <div class="package">
-                                    <div class="package__item">
-                                        <div class="package__head">
-                                            <h2>Pakett</h2>
-                                            <input class="switchbutton" type="checkbox" name="on">
-                                        </div>
-                                        <div class="package__desc">
-                                            <p class="paragraph package__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit fugiat repudiandae itaque eos omnis, quia delectus dolore quasi rerum alias atque commodi iusto aut pariatur expedita at amet? Nulla?
-                                        </div>
-                                        <div class="package__body">
-                                            
-                                            <button class="package__btn"> &#9998; </button>
-                                            <div class="package__content">
-                                                <h2>Majutusasutus</h2>
-                                                <p class="package__detail paragraph">Hotell (kaheinimese tuba, 33)</p>
-                                            </div>
-                                            <div class="package__content">
-                                                <h2>Spordirajatis</h2>
-                                                <p class="package__detail paragraph">Pallimängude saal</p>
-                                            </div>
-                                            <div class="package__content">
-                                                <h2>Toitlusuts</h2>
-                                                <p class="package__detail paragraph">
-                                                    <span class="package__content--span">Hommiksöök</span>
-                                                    <span class="package__content--span">Lõunasöök</span>
-                                                    <span class="package__content--span">Õhtusöök</span>
-                                                </p>
-                                            </div>
-                                            <div class="package__content">
-                                                <h2>Lisateenused</h2>
-                                                <p class="package__detail paragraph">Saun</p>
-                                            </div>
-                                            <div class="package__content--2">
-                                                <h2>Hind</h2>
-                                                <p class="package__cost paragraph">20$</p>
-                                                <p class="paragraph">/inimene/päev/</p>
-                                            </div>
-                                        </div>
+                    <div class="tab-pane" id="teenused">
+                        <div class="teenused">
+                            <div class="teenused__head">
+                                <div class="teenused__group">
+                                    <label for="kirjeldus">Teenuse kirjeldus</label>
+                                    <input class="teenused__group--input" type="text" placeholder="Lisa ise teenus">
+                                    <select class="teenused__valitav" name="hind">
+                                        <option value="tunnis">Valitavad teenused</option>
+                                        <option value="saun">Saun</option>
+                                        <option value="jalgr">Jalgratta rent</option>
+                                        <option value="varu">Varustuse rent</option>
+                                    </select>
+                                </div>
+                                <div class="teenused__group">
+                                    <label for="arv">Ühikute arv</label>
+                                    <input class="teenused__group--input" type="number" placeholder="Teenuse arv päevas/tunnis">
+                                </div>
+                                <div class="teenused__group">
+                                    <div class="teenused__group--2">
+                                        <label for="hind">Ühiku hind</label>
+                                        <select class="teenused__valitav--2" name="hind">
+                                            <option value="tunnis">€/tunnis</option>
+                                            <option value="paevas">€/päevas</option>
+                                        </select>
                                     </div>
-
-                                    <div class="package__item">
-                                        <div class="package__head">
-                                            <h2>Pakett</h2>
-                                            <input class="switchbutton" type="checkbox" name="on">
-                                        </div>
-                                        <div class="package__desc">
-                                            <p class="paragraph package__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est velit fugiat repudiandae itaque eos omnis, quia delectus dolore quasi rerum alias atque commodi iusto aut pariatur expedita at amet? Nulla?
-                                        </div>
-                                        <div class="package__body">
-                                            <button class="package__btn"> &#9998; </button>
-                                            <div class="package__content">
-                                                <h2>Majutusasutus</h2>
-                                                <p class="package__detail paragraph">Hotell (kaheinimese tuba, 33)</p>
-                                            </div>
-                                            <div class="package__content">
-                                                <h2>Spordirajatis</h2>
-                                                <p class="package__detail paragraph">Korvpalli saal</p>
-                                            </div>
-                                            <div class="package__content">
-                                                <h2>Toitlusuts</h2>
-                                                <p class="package__detail paragraph">
-                                                    <span class="package__content--span">Hommiksöök</span>
-                                                    <span class="package__content--span">Lõunasöök</span>
-                                                    <span class="package__content--span">Õhtusöök</span>
-                                                </p>
-                                            </div>
-                                            <div class="package__content">
-                                                <h2>Lisateenused</h2>
-                                                <p class="package__detail paragraph">Saun</p>
-                                            </div>
-                                            <div class="package__content--2">
-                                                <h2>Hind</h2>
-                                                <p class="package__cost paragraph">25$</p>
-                                                <p class="paragraph">/inimene/päev/</p>
-                                            </div>
-                                        </div>
+                                    <input class="teenused__group--input--2" type="number">
+                                </div>
+                                <div class="teenused__group">
+                                    <button class="btn--green btn--2">&#43; Lisa teenus</button>
+                                </div>
+                            </div>
+                            <div class="teenused__body">
+                                <div class="teenused__list">
+                                    <p>Teenuse kirjeldus</p>
+                                    <p>Ühikute arv</p>
+                                    <p>Ühiku hind</p>
+                                </div>
+                                <div class="teenused__item">
+                                    <div class="teenused__item--desc">
+                                        <svg class="teenused__item--icon">
+                                            <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                        </svg>
+                                        <span>Jalgratta rent</span>
                                     </div>
-
-                                    <div class="package__item">
-                                        <div class="package__head">
-                                            <h2>Pakett</h2>
-                                            <button class="btn--red btn--2">Remove</button>
-                                        </div>
-                                        <div class="package__body">
-                                            <form class="property__content-5">
-                                                <div class="package__group">
-                                                    <textarea class="property-item__desc" name="desc" id="property-desc" placeholder="Paketi tutvustus"></textarea>
-                                                    <label class="paragraph">Lisa Majutusasutus</label>
-                                                    <select class="package__group--input">
-                                                        <option value="arrival">Option 1</option>
-                                                        <option value="newbooking">Option 2</option>
-                                                        <option value="departure">Option 3</option>
-                                                    </select>
-                                                </div>
-                                                <div class="package__group">
-                                                    <label class="paragraph">Lisa Spordirajatis</label>
-                                                    <select class="package__group--input">
-                                                        <option value="">Option 1</option>
-                                                        <option value="">Option 2</option>
-                                                        <option value="">Option 3</option>
-                                                    </select>
-                                                </div>
-                                                <div class="package__group">
-                                                    <label class="paragraph">Toitlustus</label>
-                                                    <div class="package__checkboxes">
-                                                        <div class="package__checkbox">
-                                                            <label for="">Hommiksöök</label>
-                                                            <input type="checkbox">
-                                                        </div>
-                                                        <div class="package__checkbox">
-                                                            <label for="">Lõunasöök</label>
-                                                            <input type="checkbox">
-                                                        </div>
-                                                        <div class="package__checkbox">
-                                                            <label for="">Õhtusöök</label>
-                                                            <input type="checkbox">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="package__group">
-                                                    <label class="paragraph">Lisateenused</label>
-                                                    <select class="package__group--input">
-                                                        <option value="">Option 1</option>
-                                                        <option value="">Option 2</option>
-                                                        <option value="">Option 3</option>
-                                                    </select>
-                                                </div>
-                                                <div class="package__content--2">
-                                                    <label class="paragraph">Hind</label>
-                                                    <input class="package__group--input--2" type="number">
-                                                    <p class="paragraph">/inimene/päev/</p>
-                                                </div>
-                                                
-                                            </form>
-                                        </div>
+                                    <div class="teenused__item--num">
+                                        <span>10</span>
+                                    </div>
+                                    <div class="teenused__item--cost">
+                                        <span>12</span><span>€/tunnis</span>
+                                    </div>
+                                    <div class="teenused__item--button">
+                                        <button class="btn--red btn--2">Kustuda</button>
+                                    </div>
+                                </div>
+                                <div class="teenused__item">
+                                    <div class="teenused__item--desc">
+                                        <svg class="teenused__item--icon">
+                                            <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                        </svg>
+                                        <span>Saun</span>
+                                    </div>
+                                    <div class="teenused__item--num">
+                                        <span>15</span>
+                                    </div>
+                                    <div class="teenused__item--cost">
+                                        <span>20</span><span>€/tunnis</span>
+                                    </div>
+                                    <div class="teenused__item--button">
+                                        <button class="btn--red btn--2">Kustuda</button>
+                                    </div>
+                                </div>
+                                <div class="teenused__item">
+                                    <div class="teenused__item--desc">
+                                        <svg class="teenused__item--icon">
+                                            <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                        </svg>
+                                        <span>Suusa varustus</span>
+                                    </div>
+                                    <div class="teenused__item--num">
+                                        <span>15</span>
+                                    </div>
+                                    <div class="teenused__item--cost">
+                                        <span>5</span><span>€/tunnis</span>
+                                    </div>
+                                    <div class="teenused__item--button">
+                                        <button class="btn--red btn--2">Kustuda</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="u-center-text u-margin-bottom-big">
-                                <button class="btn--green btn--2">&#43; Add new package</button>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="paketid">
+                            <div class="package__container">
+                                <div class="package">
+                                    
+                                    <div class="package__item">
+                                        <nav class="accordion arrows">
+                                            <div class="package__head">
+                                                <h2>Pakett</h2>
+                                            </div>
+                                            <input class="accordion__input" type="radio" name="accordion" id="cb1" />
+                                            <section class="box">
+                                                <label class="box-title" for="cb1">Lisa majutusasutus</label>
+                                                <label class="box-close" for="acc-close"></label>
+                                                <div class="box-content">
+                                                    <div class="package__list">
+                                                        <label class="container-checkbox">Hotell 1, Twin
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Hotell 1, Triple
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Hotell 1, Suite
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Hotell 2, Twin
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Hotell 3, Suite
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Hotell 3, Twin
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Majutusasutus 2, Twin
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Majutusasutus 2, Triple
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                
+                                            </section>
+                                            <input class="accordion__input" type="radio" name="accordion" id="cb2" />
+                                            <section class="box">
+                                                <label class="box-title" for="cb2">Lisa Spordirajatis</label>
+                                                <label class="box-close" for="acc-close"></label>
+                                                <div class="box-content">
+                                                    <div class="package__list">
+                                                        <label class="container-checkbox">Spordirajatis 1
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Spordirajatis 2
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Spordirajatis 3
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Spordirajatis 4
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Spordirajatis 5
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Spordirajatis 6
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Spordirajatis 8
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Spordirajatis 9
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <input class="accordion__input" type="radio" name="accordion" id="cb3" />
+                                            <section class="box">
+                                                <label class="box-title" for="cb3">Lisa teenused</label>
+                                                <label class="box-close" for="acc-close"></label>
+                                                <div class="box-content">
+                                                    <div class="package__list">
+                                                        <label class="container-checkbox">Saun 1
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <label class="container-checkbox">Saun 2
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                            <input class="accordion__input" type="radio" name="accordion" id="acc-close" />
+                                        </nav>
+
+                                            <div class="package__body">
+                                            
+                                                <div class="package__checkboxes">
+                                                    <div class="package__checkbox">
+                                                        <label class="container-checkbox">Hommikusöök
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="package__checkbox">
+                                                        <label class="container-checkbox">Lõunasöök
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="package__checkbox">
+                                                        <label class="container-checkbox">Õhtusöök
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="package__group">
+                                                    <label for="hind">Hind/inimene/ööpäev</label>
+                                                    <input type="number" class="package__group--input" placeholder="">
+                                                </div>
+                                                <div class="package__group">
+                                                    <label for="min_inimeste_arv">Min inimeste arv</label>
+                                                    <input type="number" class="package__group--input" placeholder="">
+                                                </div>
+                                                <div class="package__group">
+                                                    <label for="peatumine">Minimaalne peatumise pikkus</label>
+                                                    <input type="number" class="package__group--input" placeholder="">
+                                                </div>
+                                                <div class="package__group">
+                                                    <label for="eritellimus">Eritellimuste võimalus</label>
+                                                    <input class="package__group--marginright" type="checkbox">
+                                                </div>
+                                                <div class="package__group--column">
+                                                    <label for="kirjeldus">Kirjeldus (optional)</label>
+                                                    <textarea name="kirjeldus" id="" cols="30" rows="5"></textarea>
+                                                </div>
+                                                <div class="package__group--column">
+                                                    <label class="package__group--kehtivus" for="kehtivus">Paketi kehtivus</label>
+                                                    <div class="package__group">
+                                                        <div class="package__group">
+                                                            <label for="from">From</label>
+                                                            <input class="package__group--input--2" type="date">
+                                                        </div>
+                                                        <div class="package__group">
+                                                            <label for="from">Until</label>
+                                                            <input class="package__group--input--2" type="date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <button class="btn--blue btn--2">Lisa</button>
+                                                <button class="btn--red btn--2">Kustuta</button>
+                                            </div>     
+                                        </div>
+
+                                        <div class="package__item">
+                                            
+                                                <div class="package__head">
+                                                    <h2>Pakett</h2>
+                                                    <input class="package__group--marginright" type="checkbox">
+                                                    <!-- <button class="btn--red btn--2">Remove</button> -->
+                                                </div>
+                                                <div class="package__added">
+                                                    <div class="package__added--group">
+                                                        <p>Lisatud majutusasutusutused</p>
+                                                        <div class="package__added--list">
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Majutusasutus 2, Twin</span>
+                                                            </div>
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Hotel 1, Twin</span>
+                                                            </div>
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Majutusasutus 2, Twin</span>
+                                                            </div>
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Hotel 2, Twin</span>
+                                                            </div>
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Majutusasutus 3, Suite</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="package__added--group">
+                                                        <p>Lisatud spordirajatised</p>
+                                                        <div class="package__added--list">
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Spordirajatis 1</span>
+                                                            </div>
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Spordirajatis 2</span>
+                                                            </div>
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Spordirajatis 3</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="package__added--group">
+                                                        <p>Lisatud teenused</p>
+                                                        <div class="package__added--list">
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Saun 1</span>
+                                                            </div>
+                                                            <div class="package__added--item">
+                                                                <svg class="package__added--icon">
+                                                                    <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                                                </svg>
+                                                                <span>Saun 2</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="package__body">
+                                                
+                                                    <div class="package__checkboxes">
+                                                        <div class="package__checkbox">
+                                                            <label class="container-checkbox">Hommikusöök
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="package__checkbox">
+                                                            <label class="container-checkbox">Lõunasöök
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="package__checkbox">
+                                                            <label class="container-checkbox">Õhtusöök
+                                                                <input type="checkbox">
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                
+                                                    <div class="package__group">
+                                                        <label for="hind">Hind/inimene/ööpäev</label>
+                                                        <input type="number" class="package__group--input" placeholder="">
+                                                    </div>
+                                                    <div class="package__group">
+                                                        <label for="min_inimeste_arv">Min inimeste arv</label>
+                                                        <input type="number" class="package__group--input" placeholder="">
+                                                    </div>
+                                                    <div class="package__group">
+                                                        <label for="peatumine">Minimaalne peatumise pikkus</label>
+                                                        <input type="number" class="package__group--input" placeholder="">
+                                                    </div>
+                                                    <div class="package__group">
+                                                        <label for="eritellimus">Eritellimuste võimalus</label>
+                                                        <input class="package__group--marginright" type="checkbox">
+                                                    </div>
+                                                    <div class="package__group--column">
+                                                        <label for="kirjeldus">Kirjeldus (optional)</label>
+                                                        <textarea name="kirjeldus" id="" cols="30" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="package__group--column">
+                                                        <label class="package__group--kehtivus" for="kehtivus">Paketi kehtivus</label>
+                                                        <div class="package__group">
+                                                            <div class="package__group">
+                                                                <label for="from">From</label>
+                                                                <input class="package__group--input--2" type="date">
+                                                            </div>
+                                                            <div class="package__group">
+                                                                <label for="from">Until</label>
+                                                                <input class="package__group--input--2" type="date">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn--blue btn--2">Muuda</button>
+                                                    <button class="btn--red btn--2">Kustuta</button>
+                                                </div>     
+                                            </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="u-center-text">
+                                    <button class="btn--green btn--2">&#43; Add new package</button>
+                                </div>
                             </div>
                     </div>
             </div>

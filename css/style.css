@@ -1297,23 +1297,56 @@ header {
   display: grid;
   grid-template-columns: auto auto auto; }
 
+.box__notifi {
+  margin-top: .5rem;
+  margin-bottom: -1rem; }
+  .box__notifi--icon {
+    position: absolute;
+    background: #55c57a;
+    padding: 0rem .3rem;
+    border-radius: 8px;
+    margin-top: -.3rem;
+    margin-left: 2rem;
+    color: #fff; }
+
 .box__user {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
   margin-bottom: .4rem;
   width: 6rem;
+  height: 7rem;
   background-color: #fff;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24); }
   .box__user--icon {
-    height: 3rem;
-    width: 3rem;
+    height: 2.8rem;
+    width: 2.8rem;
     fill: #2998ff; }
   .box__user span {
-    margin: -.3rem;
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    line-height: 1.9rem; }
+  .box__user--name {
+    width: 5rem;
+    text-align: center; }
+  .box__user--longname {
+    position: relative;
+    width: 5rem;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+    .box__user--longname:hover {
+      position: absolute;
+      overflow: visible;
+      top: 3.8rem;
+      background-color: #2998ff;
+      width: 10rem;
+      border-radius: 5px;
+      z-index: 5555;
+      text-align: center;
+      color: #fff; }
 
 .box__grey-border {
   border: 2px solid #666; }
@@ -1471,7 +1504,7 @@ input:checked + section.box .box-title:before {
   flex-direction: column;
   z-index: 10;
   position: absolute;
-  top: -37px; }
+  bottom: 58px; }
   .dropdown-projects__date {
     display: flex;
     align-items: center;

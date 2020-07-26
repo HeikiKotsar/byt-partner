@@ -754,6 +754,7 @@
 
 .box {
 
+    
 
     &__container {
         display: grid;
@@ -785,26 +786,74 @@
 
     }
 
+    &__notifi {
+        margin-top: .5rem;
+        margin-bottom: -1rem;
+
+        &--icon {
+            position: absolute;
+            background: #55c57a;
+            padding: 0rem .3rem;
+            border-radius: 8px;
+            margin-top: -.3rem;
+            margin-left: 2rem;
+            color: #fff;
+            
+        }
+    }
+
+   
+
     &__user {
         display: flex;
         align-items: center;
         flex-direction: column;
+        position: relative;
         margin-bottom: .4rem;
         width: 6rem;
+        height: 7rem;
         background-color: #fff;
         cursor: pointer;
         border-radius: 5px;
         box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
 
         &--icon {
-            height: 3rem;
-            width: 3rem;
+            
+            height: 2.8rem;
+            width: 2.8rem;
             fill: $primary-color;
         }
 
         span {
-            margin: -.3rem;
+            // margin: -.3rem;
             font-size: 1.2rem;
+            line-height: 1.9rem;
+        }
+
+        &--name {
+            width: 5rem;
+            text-align: center;
+        }
+
+        &--longname {
+            position: relative;
+            width: 5rem;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            
+
+            &:hover {
+                position: absolute;
+                overflow: visible;
+                top: 3.8rem;
+                background-color: $primary-color;
+                width: 10rem;
+                border-radius: 5px;
+                z-index: 5555;
+                text-align: center;
+                color: #fff;
+            }
         }
     }
 
@@ -815,6 +864,7 @@
     &__green-border {
         border: 2px solid #55c57a;
     }
+
 }
 
 .date {
@@ -993,7 +1043,7 @@ input:checked + section.box .box-title:before {
     z-index:10;
     position:absolute;
     // left:-10px;
-    top: -37px;
+    bottom: 58px;
 
     &__date {
         display: flex;

@@ -28,6 +28,13 @@
                     <span class="user-nav__notification">13</span>
                 </a>
             </div>
+            <div class="user-nav__icon-box" title="Logout">
+                <a href="messages.html" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-exit"></use>
+                    </svg>
+                </a>
+            </div>
             <div class="user-nav__user">
                 <a href="#" class="user-nav__link">
                     <img src="img/IMG_1179.jpeg" alt="User photo" class="user-nav__user-photo">
@@ -36,7 +43,7 @@
             </div>
         </nav>
     </header>
-    <div class="content">
+    <div class="property-main-container">
         <nav class="sidebar">
             <ul class="side-nav">
                 <li class="side-nav__item">
@@ -103,6 +110,7 @@
                     </ul>
                     <div class="tab-pane active" id="majutus">
                             <form class="property__content-1">
+
                                 <div class="property-container">
                                     <div class="property-header">
                                         <h2 class="property-header--1">Majutus: Hotell</h2>
@@ -326,6 +334,8 @@
                                         </div>
                                         <button class="btn--green btn--2">&#43; Add room</button>
                                     </div>
+
+
                                 </div>
 
                                     <!-- Kalendri ulejaanud vaated -->
@@ -622,6 +632,8 @@
                                 </div>
                             </form>
                     </div>
+                    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+                    <!-- Keskuse kirjeldus -->
                     <div class="tab-pane" id="toitlustus">
                        <from class="property__content-2">
                            <div class="centre__container">
@@ -816,95 +828,99 @@
                         </form>
                     </div>
                     <div class="tab-pane" id="teenused">
-                        <div class="teenused">
-                            <div class="teenused__head">
-                                <div class="teenused__group">
-                                    <label for="kirjeldus">Teenuse kirjeldus</label>
-                                    <input class="teenused__group--input" type="text" placeholder="Lisa ise teenus">
-                                    <select class="teenused__valitav" name="hind">
-                                        <option value="tunnis">Valitavad teenused</option>
-                                        <option value="saun">Saun</option>
-                                        <option value="jalgr">Jalgratta rent</option>
-                                        <option value="varu">Varustuse rent</option>
-                                    </select>
-                                </div>
-                                <div class="teenused__group">
-                                    <label for="arv">Ühikute arv</label>
-                                    <input class="teenused__group--input" type="number" placeholder="Teenuse arv päevas/tunnis">
-                                </div>
-                                <div class="teenused__group">
-                                    <div class="teenused__group--2">
-                                        <label for="hind">Ühiku hind</label>
-                                        <select class="teenused__valitav--2" name="hind">
-                                            <option value="tunnis">€/tunnis</option>
-                                            <option value="paevas">€/päevas</option>
+                        <div class="teenused-container">
+                            <div class="teenused">
+                                <div class="teenused__head">
+                                    <div class="teenused__group">
+                                        <label for="kirjeldus">Teenuse kirjeldus</label>
+                                        <input class="teenused__group--input" type="text" placeholder="Lisa ise teenus">
+                                        <select class="teenused__valitav" name="hind">
+                                            <option value="tunnis">Valitavad teenused</option>
+                                            <option value="saun">Saun</option>
+                                            <option value="jalgr">Jalgratta rent</option>
+                                            <option value="varu">Varustuse rent</option>
                                         </select>
                                     </div>
-                                    <input class="teenused__group--input--2" type="number">
-                                </div>
-                                <div class="teenused__group">
-                                    <button class="btn--green btn--2">&#43; Lisa teenus</button>
-                                </div>
-                            </div>
-                            <div class="teenused__body">
-                                <div class="teenused__list">
-                                    <p>Teenuse kirjeldus</p>
-                                    <p>Ühikute arv</p>
-                                    <p>Ühiku hind</p>
-                                </div>
-                                <div class="teenused__item">
-                                    <div class="teenused__item--desc">
-                                        <svg class="teenused__item--icon">
-                                            <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
-                                        </svg>
-                                        <span>Jalgratta rent</span>
+                                    <div class="teenused__group">
+                                        <label for="arv">Ühikute arv</label>
+                                        <input class="teenused__group--input" type="number" placeholder="Teenuse arv päevas/tunnis">
                                     </div>
-                                    <div class="teenused__item--num">
-                                        <span>10</span>
+                                    <div class="teenused__group">
+                                        <div class="teenused__group--2">
+                                            <label for="hind">Ühiku hind</label>
+                                            <select class="teenused__valitav--2" name="hind">
+                                                <option value="tunnis">€/tunnis</option>
+                                                <option value="paevas">€/päevas</option>
+                                            </select>
+                                        </div>
+                                        <input class="teenused__group--input--2" type="number">
                                     </div>
-                                    <div class="teenused__item--cost">
-                                        <span>12</span><span>€/tunnis</span>
-                                    </div>
-                                    <div class="teenused__item--button">
-                                        <button class="btn--red btn--2">Kustuda</button>
+                                    <div class="teenused__group">
+                                        <button class="btn--green btn--2">&#43; Lisa teenus</button>
                                     </div>
                                 </div>
-                                <div class="teenused__item">
-                                    <div class="teenused__item--desc">
-                                        <svg class="teenused__item--icon">
-                                            <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
-                                        </svg>
-                                        <span>Saun</span>
+                                <div class="teenused__body">
+                                    <div class="teenused__list">
+                                        <p>Teenuse kirjeldus</p>
+                                        <p>Ühikute arv</p>
+                                        <p>Ühiku hind</p>
                                     </div>
-                                    <div class="teenused__item--num">
-                                        <span>15</span>
+                                    <div class="teenused__item">
+                                        <div class="teenused__item--desc">
+                                            <svg class="teenused__item--icon">
+                                                <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                            </svg>
+                                            <span>Jalgratta rent</span>
+                                        </div>
+                                        <div class="teenused__item--num">
+                                            <span>10</span>
+                                        </div>
+                                        <div class="teenused__item--cost">
+                                            <span>12</span><span>€/tunnis</span>
+                                        </div>
+                                        <div class="teenused__item--button">
+                                            <button class="btn--red btn--2">Kustuda</button>
+                                        </div>
                                     </div>
-                                    <div class="teenused__item--cost">
-                                        <span>20</span><span>€/tunnis</span>
+                                    <div class="teenused__item">
+                                        <div class="teenused__item--desc">
+                                            <svg class="teenused__item--icon">
+                                                <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                            </svg>
+                                            <span>Saun</span>
+                                        </div>
+                                        <div class="teenused__item--num">
+                                            <span>15</span>
+                                        </div>
+                                        <div class="teenused__item--cost">
+                                            <span>20</span><span>€/tunnis</span>
+                                        </div>
+                                        <div class="teenused__item--button">
+                                            <button class="btn--red btn--2">Kustuda</button>
+                                        </div>
                                     </div>
-                                    <div class="teenused__item--button">
-                                        <button class="btn--red btn--2">Kustuda</button>
-                                    </div>
-                                </div>
-                                <div class="teenused__item">
-                                    <div class="teenused__item--desc">
-                                        <svg class="teenused__item--icon">
-                                            <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
-                                        </svg>
-                                        <span>Suusa varustus</span>
-                                    </div>
-                                    <div class="teenused__item--num">
-                                        <span>15</span>
-                                    </div>
-                                    <div class="teenused__item--cost">
-                                        <span>5</span><span>€/tunnis</span>
-                                    </div>
-                                    <div class="teenused__item--button">
-                                        <button class="btn--red btn--2">Kustuda</button>
+                                    <div class="teenused__item">
+                                        <div class="teenused__item--desc">
+                                            <svg class="teenused__item--icon">
+                                                <use xlink:href="img/2icons.svg#icon-checkbox-checked"></use>
+                                            </svg>
+                                            <span>Suusa varustus</span>
+                                        </div>
+                                        <div class="teenused__item--num">
+                                            <span>15</span>
+                                        </div>
+                                        <div class="teenused__item--cost">
+                                            <span>5</span><span>€/tunnis</span>
+                                        </div>
+                                        <div class="teenused__item--button">
+                                            <button class="btn--red btn--2">Kustuda</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+
                     </div>
                     <div class="tab-pane" id="paketid">
                             <div class="package__container">

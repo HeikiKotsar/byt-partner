@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/BYT-logo.png" alt="byt-logo" class="logo">
+        <nav class="user-nav">
+            <div class="user-nav__icon-box">
+                <a href="partner-admin-4.html" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </a>
+            </div>
+            <div class="user-nav__icon-box">
+                <a href="messages.html" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </a>
+            </div>
+            <div class="user-nav__icon-box" title="Logout">
+                <a href="messages.html" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-exit"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="user-nav__user">
+                <a onclick="userNav()" class="user-nav__link" title="logi valja">
+                    <span class="user-nav__user-name">Administrator</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="admin-dash-container">
+        <nav class="sidebar">
+            <ul class="side-nav">
+                <li class="side-nav__item side-nav__item--active">
+                    <a href="admin-dasboard.html" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-checkmark"></use>
+                        </svg>
+                        <span>Verify users</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="side-nav">
+                <li class="side-nav__item">
+                    <a href="partner-admin-5.html" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-coin-euro"></use>
+                        </svg>
+                        <span>Finance</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

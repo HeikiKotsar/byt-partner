@@ -1,14 +1,24 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    
+}
+
 .side-nav {
     font-size: 1.6rem;
     list-style: none;
     margin-top: 3rem;
-
+    
+    
     &__item {
         position: relative;
+        margin-bottom: auto;
 
         &:not(:last-child) {
             margin-bottom: .5rem;
         }
+
     }
 
     &__item::before {
@@ -45,6 +55,7 @@
         position: relative;
         display: flex;
         align-items: center;
+        width: 100%;
     }
 
 
@@ -60,5 +71,5 @@
     font-size: 1.2rem;
     text-align: center;
     padding: 2.5rem;
-    margin-top: 35rem;
+    margin-bottom: auto;
 }

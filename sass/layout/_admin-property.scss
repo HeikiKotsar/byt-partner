@@ -1,3 +1,8 @@
+.property-main-container {
+    display: flex;
+    height: 100%;
+}
+
 .property {
     &__nav {
         display: flex;
@@ -977,6 +982,10 @@ div.change div.hiddendiv ul.opere li {
 }
 
 // Teenused
+
+.teenused-container {
+    height: 92vh;
+}
 
 .teenused {
     

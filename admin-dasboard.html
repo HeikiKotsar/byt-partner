@@ -49,7 +49,7 @@
                         <svg class="side-nav__icon">
                             <use xlink:href="img/sprite.svg#icon-checkmark"></use>
                         </svg>
-                        <span>Verify users</span>
+                        <span>Verify</span>
                     </a>
                 </li>
             </ul>
@@ -64,6 +64,117 @@
                 </li>
             </ul>
         </nav>
+        <div class="verify-container">
+            <div class="verify">
+                <div class="verify__head">
+                    <div class="verify__group">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Type name">
+                    </div>
+                    <div class="verify__group">
+                        <label for="name">Email</label>
+                        <input type="email" placeholder="Type email">
+                    </div>
+                    <div class="verify__group">
+                        <label for="order">Order form</label>
+                        <select name="order">
+                            <option value="newest">Newest</option>
+                            <option value="oldest">Oldest</option>
+                        </select>
+                    </div>
+                    <div class="verify__group">
+                        <label for="status">Status</label>
+                        <select name="status">
+                            <option value="all">All</option>
+                            <option value="verified">Verified</option>
+                            <option value="changes">Changes</option>
+                            <option value="notverified">Not verified</option>
+                        </select>
+                    </div>
+                    <div class="verify__group">
+                        <button class="verify__search">
+                            <svg class="verify__search--icon">
+                                <use xlink:href="img/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="verify__body">
+                    <div class="verify__list">
+                        <a href="index.html" class="verify__item">
+                            <div class="verify__item--name">
+                                <span>Mingi koht OÜ</span>
+                            </div>
+                            <div class="verify__item--email">
+                                <span>Valter.Tamm@khk.ee</span>
+                            </div>
+                            <div class="verify__item--date">
+                                <span>20.12.2021</span>
+                            </div>
+                            <div class="verify__item--status status-green">
+                                <span>Verified</span>
+                            </div>
+                        </a>
+                        <a href="index.html" class="verify__item">
+                            <div class="verify__item--name">
+                                <span>Mingi koht teises kohas OÜ</span>
+                            </div>
+                            <div class="verify__item--email">
+                                <span>Valter.Tamm@khk.ee</span>
+                            </div>
+                            <div class="verify__item--date">
+                                <span>20.12.2021</span>
+                            </div>
+                            <div class="verify__item--status status-green">
+                                <span>Verified</span>
+                            </div>
+                        </a>
+                        <a href="index.html" class="verify__item">
+                            <div class="verify__item--name">
+                                <span>Mingi koht kolmandas kohas OÜ</span>
+                            </div>
+                            <div class="verify__item--email">
+                                <span>valter.talinn12345@khk.ee</span>
+                            </div>
+                            <div class="verify__item--date">
+                                <span>20.12.2021</span>
+                            </div>
+                            <div class="verify__item--status status-red">
+                                <span>Not verified</span>
+                            </div>
+                        </a>
+                        <a href="index.html" class="verify__item">
+                            <div class="verify__item--name">
+                                <span>Mingi koht Tartus OÜ</span>
+                            </div>
+                            <div class="verify__item--email">
+                                <span>valter.talinn12345@khk.ee</span>
+                            </div>
+                            <div class="verify__item--date">
+                                <span>20.12.2021</span>
+                            </div>
+                            <div class="verify__item--status status-grey">
+                                <span>Pending</span>
+                            </div>
+                        </a>
+                        <a href="index.html" class="verify__item">
+                            <div class="verify__item--name">
+                                <span>Mingi koht Tartus OÜ</span>
+                            </div>
+                            <div class="verify__item--email">
+                                <span>valter.talinn12345@khk.ee</span>
+                            </div>
+                            <div class="verify__item--date">
+                                <span>20.12.2021</span>
+                            </div>
+                            <div class="verify__item--status status-yellow">
+                                <span>Changes</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

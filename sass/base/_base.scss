@@ -20,8 +20,13 @@ html {
 
 body {
     box-sizing: border-box;
+    background: #eee;
 }
 
+svg {
+    pointer-events: none; /*Without this svg buttons would be impossible to use properly*/
+}
+  
 a:hover {
     cursor: pointer;
 }

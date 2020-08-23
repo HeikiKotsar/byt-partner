@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify-details</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="img/BYT-logo.png" alt="byt-logo" class="logo">
+        <nav class="user-nav">
+            <div class="user-nav__icon-box">
+                <a href="partner-admin-4.html" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </a>
+            </div>
+            <div class="user-nav__icon-box">
+                <a href="messages.html" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </a>
+            </div>
+            <div class="user-nav__icon-box" title="Logout">
+                <a href="messages.html" class="user-nav__link">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-exit"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="user-nav__user">
+                <a onclick="userNav()" class="user-nav__link" title="logi valja">
+                    <span class="user-nav__user-name">Administrator</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="verify-main-container">
+        <nav class="sidebar">
+            <ul class="side-nav">
+                <li class="side-nav__item side-nav__item--active">
+                    <a href="admin-dasboard.html" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-checkmark"></use>
+                        </svg>
+                        <span>Verify</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="side-nav">
+                <li class="side-nav__item">
+                    <a href="partner-admin-5.html" class="side-nav__link">
+                        <svg class="side-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-coin-euro"></use>
+                        </svg>
+                        <span>Finance</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="verify-container">
+            <div class="verify">
+                <div class="verify__details">
+                    <h1>Spordikeskuse nimi</h1>
+                    <div class="verify__details--status">
+                        <span class="status-red">Not verified</span>
+                    </div>
+                    <a class="verify__details--changes" href="#">View changes</a>
+                </div>
+                <div class="verify__data">
+                    <div class="verify__grid">
+                        <div class="verify__group">
+                            <label for="name">Full Name</label>
+                            <input type="text" value="Toomas Sein">
+                        </div>
+                        <div class="verify__group">
+                            <label for="name">Company reg nr</label>
+                            <input type="text">
+                        </div>
+                        <div class="verify__group">
+                            <label for="name">Registered company name</label>
+                            <input type="text">
+                        </div>
+                        <div class="verify__group">
+                            <label for="name">Phone number</label>
+                            <input type="text">
+                        </div>
+                        <div class="verify__group">
+                            <label for="name">Work email</label>
+                            <input type="email">
+                        </div>
+                        <div class="verify__group">
+                            <label for="name">Sport center email</label>
+                            <input type="email">
+                        </div>
+                        <div class="verify__group">
+                            <label for="name">Sport center location</label>
+                            <input type="email">
+                        </div>
+                        <div class="verify__group">
+                            <label for="name">Office loacation</label>
+                            <input type="email">
+                        </div>
+                        <div class="verify__group">
+                            <div class="verify__btn-container">
+                                <button class="verify__btn btn--green">Verify</button>
+                                <button class="verify__btn btn--red">Cancel</button>
+                                <button class="verify__btn btn--blue">Message partner</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="verify__group">
+                        <label for="name">Description</label>
+                        <textarea class="verify__data--desc" name="desc" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="verify__group">
+                        <label for="pictures">Pictures</label>
+                        <div class="verify__pictures">
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                            <a target="_blank" href="./img/partner-land.jpg">
+                                <img class="verify__pictures--img" src="./img/partner-land.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

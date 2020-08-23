@@ -3,6 +3,15 @@
     height: 93vh;
 }
 
+.verify-main-container {
+    display: flex;
+    height: 100vh;
+
+    @include respond(big-desktop) {
+        height: 100%;
+    }
+}
+
 .verify-container {
     margin: 2rem auto;
     width: 100rem;
@@ -23,6 +32,8 @@
     }
 
     &__group {
+
+        margin-top: 1rem;
 
         label {
             display: block;
@@ -91,6 +102,99 @@
         &--status {
             width: 17rem;
             text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    // Verify-details
+    &__details {
+        display: flex;
+        align-items: center;
+
+        h1 {
+            margin-right: auto;
+        }
+
+        &--status {
+            font-size: 1.5rem;
+            margin-right: 3rem;
+            
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        &--changes {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: $primary-color;
+
+            &:hover {
+                color: darkblue;
+            }
+        }
+    }
+
+    &__btn-container {
+        margin-top: 2.4rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 2rem;
+    }
+
+    &__btn {
+        border: none;
+        transition: all .2s;
+        padding: .7rem 1.7rem;
+        border-radius: 20px;
+        margin: 0rem .2rem;
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10rem 20rem rgba($color-black, .2);
+        }
+    }
+
+    &__data {
+        &--desc {
+            
+            width: 52rem;
+            padding: 0.7rem 1rem;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+
+    &__pictures {
+        display: flex;
+        flex-flow: row wrap;
+        height: 24rem;
+        width: 88rem;
+        overflow: auto;
+        
+
+        &--img {
+            max-height: 10rem;
+            width: auto;
+            margin: .5rem .7rem;
+            border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar {
+            width: .7em;    
+        }
+
+        &::-webkit-scrollbar-thumb {
+        
+            background: $primary-color;
+            border-radius: 5px;
         }
     }
 }
@@ -110,4 +214,6 @@
 .status-grey {
     color: #7b7b7b;
 }
+
+
 

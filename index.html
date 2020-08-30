@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Become a partner</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -40,13 +41,18 @@
                     <li class="mobile-nav__item"><a class="mobile-nav__link" href="index.html#contact">Contact us</a></li>
                     <li class="mobile-nav__item"><a class="mobile-nav__link" href="#help">Help</a></li>
                     <li class="mobile-nav__item2"><a class="mobile-nav__link2" href="login.html">Log In</a></li>
-                   
                 </ul>
             </div>
         </nav>
     
     <main>
         <section class="section-sign-up" id="sign">
+            <div class="landpage">
+                <div class="landpage__desc">
+                    <h1 data-aos="fade-up">Get ready to start taking in new and more clients with BYT</h1>
+                    <p data-aos="fade-up" data-aos-delay="1000">If you are a sport center, housing place or catering, BYT makes event organizing at your company easier. You have total control over your availability, pricing and rules. Join BYT to earn more clients without hassle  </p>
+                </div>
+                
                 <div class="sign-form">
                     <form action="#">
                         <h2 class="heading-secondary u-center-text">Sign up</h2>
@@ -67,6 +73,7 @@
                         </div>
                     </form>
                 </div>
+            </div>
                 <div class="scroll">
                     <span></span>
                     <span></span>
@@ -74,78 +81,164 @@
                 </div>
         </section>
         <section class="section-partner u-center-text">
-            <h2 class="heading-secondary u-margin-bottom-medium">Becoming a Book Your Training partner</h2>
             <div class="info">
-                <div class="info__box">
-                    <img src="img/one.png" class="info__img" alt="one">
-                    <p class="heading-tertiary u-margin-top-small-2">List your
-                        sports center,
-                        training facility,
-                        housing or a diner.
-                    </p>
+                <div class="info__box" data-aos="fade-up">
+                    <svg class="info__box--icon">
+                        <use xlink:href="img/sprite.svg#icon-number2"></use>
+                    </svg>
+                    <h2>List your company for free</h2>
+                    <p>List your sport center, training facility, housing or catering accomodation. </p>
                 </div>
-                <div class="info__box">
-                        <img src="img/two.png" class="info__img" alt="two">
-                    <p class="heading-tertiary u-margin-top-small-2">Decide how you want to host - 
-                        choose your own schedule, your prices and other requirements. We're here to help.
-                    </p>
+                <div class="info__box" data-aos="fade-up">
+                    <svg class="info__box--icon">
+                        <use xlink:href="img/sprite.svg#icon-number1"></use>
+                    </svg>
+                    <h2>Decide how you want to host</h2>
+                    <p>Choose your own schedule, your prices and other requirements. We are here to help </p>
                 </div>
-                <div class="info__box">
-                        <img src="img/three.png" class="info__img" alt="three">
-                    <p class="heading-tertiary u-margin-top-small-2">Welcome your first quests. We'll check if everything is ok and your place will be live.
-                    </p>
-                </div>
-            </div>
-            <a href="#sign" class="btn btn--green btn--animated">Get Started</a>
-        </section>
-        <section class="section-prices u-center-text">
-            <h2 class="heading-secondary u-margin-bottom-medium">Prices, payments and commission</h2>
-            <div class="container">
-                <div class="box">
-                    <img src="img/euro.png" alt="euro-coin">
-                    <h2 class="heading-tertiary">Prices</h2>
-                    <p class="paragraph">We price costumers on your given price, that clients will pay to you. We don't add anything to the price, that you have appointed. That way you can stay ahead of the competition.</p>
-                </div>
-                <div class="box u-margin-top-small-2">
-                    <img src="img/tag.png" alt="euro-coin">
-                    <h2 class="heading-tertiary">Comission</h2>
-                    <p class="paragraph">There's no fixed fees. Payments are available through our platform. We'll take 10% commission from each booking.</p>
+                <div class="info__box"  data-aos="fade-up">
+                    <svg class="info__box--icon">
+                        <use xlink:href="img/sprite.svg#icon-number"></use>
+                    </svg>
+                    <h2>Wecome your first clients</h2>
+                    <p>We will check if everything is good and once your place is live guests can reach you. </p>
                 </div>
             </div>
         </section>
         <section class="section-work u-center-text">
             <h2 class="heading-secondary u-margin-bottom-medium">How does it work</h2>
-            <div class="container">
-                <div class="box">
-                    <img src="img/listing.png" alt="listing">
-                    <h2 class="heading-tertiary">Open and close you listing, whenever you need to</h2>
-                    <p class="paragraph">We don't attach you with any long-term contracts, which means you are in charge of your future</p>
-                </div>
-                <div class="box u-margin-top-small-2">
-                    <img src="img/group.png" alt="group">
-                    <h2 class="heading-tertiary">We don't take money from customers</h2>
-                    <p class="paragraph">We don't add anything to the price that you have set.</p>
-                </div>
-                <div class="box u-margin-top-small-2">
-                    <img src="img/tick-inside-circle.png" alt="check">
-                    <h2 class="heading-tertiary">Check your availability</h2>
-                    <p class="paragraph">In book your training you can choose, when do you accept customers.</p>
-                </div>
-                <div class="box u-margin-top-small-2">
-                    <img src="img/calendar.png" alt="calendar">
-                    <h2 class="heading-tertiary">Use our calendar</h2>
-                    <p class="paragraph">With our calendar you can manage your incoming and outgoing customers.</p>
+            <div class="work">
+                <div class="work__container">
+                    <div class="work__item">
+                        <div class="work__texts">
+                            <h2>Check your availability and calendar. </h2>
+                            <p>With BYT you can choose when do you want to accept customers and manage easily your incoming and outgoing clients</p>
+                        </div>
+                        <div class="work__icon">
+                            <svg class="work__icon--icon">
+                                <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__texts">
+                            <h2>Open and close your listings, whenever you 
+                                need to. </h2>
+                            <p>We don’t attach you with any long-term contracts, which means you are in charge
+                                More information in our cooperation aggreement.</p>
+                        </div>
+                        <div class="work__icon">
+                            <svg class="work__icon--icon">
+                                <use xlink:href="img/sprite.svg#icon-toggle-on"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__texts">
+                            <h2>Communication with us and clients</h2>
+                            <p>You can communicate through our chat system with your clients who have requested a booking and also our customer support answers if you have any questions. </p>
+                        </div>
+                        <div class="work__icon">
+                            <svg class="work__icon--icon">
+                                <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="work__item">
+                        <div class="work__texts">
+                            <h2>Set standards on what type of clients you accept</h2>
+                            <p>Determine minimum or maximum clients number per booking and the event durations. Create package and discount offers. </p>
+                        </div>
+                        <div class="work__icon">
+                            <svg class="work__icon--icon">
+                                <use xlink:href="img/sprite.svg#icon-playlist_add_check"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </div>
             <a href="#sign" class="btn btn--green btn--animated u-margin-top-small-2">Get Started</a>
         </section>
+        <section class="section-prices u-center-text">
+            <h2 class="heading-secondary u-margin-bottom-medium">Prices, payments and commission</h2>
+            <div class="pay">
+                <div class="pay__item">
+                    <h2>Prices</h2>
+                    <p>We price cutomers on your given price, that client will pay to you. We do not add anything to the price, that you
+                    have appointed. That way, you are always in control</p>
+                </div>
+                <div class="pay__item">
+                    <h2>Commission</h2>
+                    <p>We will ask you anywhere between 10 - 15% commission at the end of each month. There are no fixed fees.</p>
+                </div>
+                <div class="pay__item">
+                    <h2>Marketing</h2>
+                    <p>There is an option to market your company on our page, so that it will show up first in the search. It will be on top of the search for 1 month. It will cost...</p>
+                </div>
+            </div>
+            <a href="#sign" class="btn btn--green btn--animated u-margin-top-small-2">Get Started</a>
+        </section>
+        
         <section class="section-faq u-center-text">
-            <h2 class="heading-secondary u-margin-bottom-medium">faq</h2>
-            <h3 class="heading-tertiary">What types of clients can you expect?</h3>
+            <h2 class="heading-secondary u-margin-bottom-medium">Types of clients</h2>
             <br>
-            <p class="paragraph">They usually are different sports teams, who want to use your training facilities, housing place and/or a food place because it's a part of their training camp.</p>
-            <br>
-            <p class="paragraph">Training camps are usually held anywhere between 3 days to 2 weeks, that is the time frame in which these teams would like to use your services.</p>
+            <div class="pay__item">
+                <p>Because we market this site as sports event organizing platform, this is what types of clients you can expect. They are usually different sport teams who want to use your training facilities, housing place or food place as a part of their training camp. </p>
+            </div>
+            <div class="pay__item">
+                <p>
+                    Training camps are usually held anywhere between 5 days to 2 weeks and host 10 - 30 people. That is the time frame these teams would like to use your services. 
+                </p>
+            </div>
+        </section>
+        <section class="section-contact">
+            <div class="contact">
+                <div class="contact__flex">
+                    <div class="contact__form">
+                        <h2>Have a question?</h2>
+                        <form action="#">
+                            <div class="contact__group">
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Type your name">
+                            </div>
+                            <div class="contact__group">
+                                <label for="name">Email</label>
+                                <input type="text" placeholder="Type your email">
+                            </div>
+                            <div class="contact__group">
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Type your massege"></textarea>
+                            </div>
+                            <div class="contact__group u-center-text">
+                                <button>Send</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact__data">
+                        <h2>Contacts</h2>
+                        <div class="contact__data--list">
+                            <div class="contact__data--item">
+                                <svg class="contact__data--icon">
+                                    <use xlink:href="img/sprite.svg#icon-location"></use>
+                                </svg>
+                                <p>Aadress 24, Tallinn 50122</p>
+                            </div>
+                            <div class="contact__data--item">
+                                <svg class="contact__data--icon">
+                                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <p>+372 5083922343</p>
+                            </div>
+                            <div class="contact__data--item">
+                                <svg class="contact__data--icon">
+                                    <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                                </svg>
+                                <p>bookyourtraining@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>   
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -169,6 +262,15 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 1500, // values from 0 to 3000, with step 50ms
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+    });
+</script>
 </body>
 </html>

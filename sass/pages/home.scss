@@ -1,6 +1,7 @@
 .section-sign-up {
-    
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    height: 115vh;
     background-image: linear-gradient(
         to right top, 
         rgba($color-grey-dark-2, 0.8), 
@@ -21,14 +22,40 @@
         top: 0;
         right: 0;
         width: 30%;
-        height: 100vh;
+        height: 115vh;
         background-color: $primary-color;
         opacity: 0.7;
+        z-index: 2;
 
         @include respond(phone) {
             height: 95vh;
             
          }
+    }
+}
+
+// LANDPAGE
+.landpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+
+    &__desc {
+        flex: 0 0 45%;
+        margin-right: 2rem;
+       
+
+        h1 {
+            font-size: 2.3em;
+            color: #fff;
+        }
+
+        p {
+            font-size: 2rem;
+            margin-top: 1rem;
+            color: #eee;
+        }
     }
 }
 
@@ -57,7 +84,7 @@
 
 .section-partner {
     background-color: $color-grey-light-2;
-    padding: 10rem 0;
+    padding: 5rem 0;
 
     @include respond(phone) {
         padding: 5rem 0;  
@@ -104,11 +131,12 @@
 // PARTNER INFO
 
 .info {
-    padding: 1rem;
-    
+    margin-top: -12rem;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
+    
+    
     
     @include respond(tab-port) {
         flex-wrap: wrap;
@@ -116,13 +144,222 @@
 
 
     &__box {
-        padding: 4rem;
-        margin: 3rem;
+        padding: 4rem 3rem;
+        margin: 1rem 3rem;
         width: 50rem;
+        
+        border-radius: 10px;
+        background: #fff;
+        z-index: 5;
+        box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin: 1rem 0rem;
+        }
+
+        &--icon {
+            width: 8rem;
+            height: 8rem;
+            fill: $primary-color;
+        }
     }
 
     &__img {
         align-items: center;
+    }
+}
+
+// How does it work section
+.work {
+    &__container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0rem;
+    }
+
+    &__texts {
+        flex: 0 0 60%;
+
+        h2 {
+            font-size: 2rem;
+            text-align: start;
+        }
+
+        p {
+            font-size: 1.6rem;
+            text-align: start;
+        }
+    }
+
+    &__icon {
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+
+        &--icon {
+            width: 6rem;
+            height: 6rem;
+            fill: $primary-color;
+        }
+    }
+}
+
+// Payments, prices and commission
+.pay {
+    &__item {
+        width: 60%;
+        margin: 2rem auto;
+
+
+        h2 {
+            font-size: 2rem;
+            text-align: start;
+            margin-left: .5rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            text-align: start;
+        }
+    }
+}
+
+// Contact
+.contact {
+    padding: 10rem 0;
+    margin: auto;
+    width: 110rem;
+    
+
+    &__flex {
+        display: flex;
+        align-items: center;
+        // flex-direction: row;   
+        
+    }
+
+    &__form {
+        position: relative;
+        padding: 4rem 2rem;
+        background: #fff;
+        flex: 0 0 70%;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        
+        
+        form {
+            margin-left: 22rem;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__group {
+        margin: 1rem 0rem;
+
+        label {
+            display: block;
+            font-size: 1.4rem;
+        }
+
+        input {
+            font-family: "Lato", sans-serif;
+            padding: 1rem;
+            border-radius: 1px;
+            border: none;
+            outline: none;
+            width: 40rem;
+            border-bottom: 2px solid $primary-color;
+        }
+
+        textarea {
+            font-family: "Lato", sans-serif;
+            margin-top: 2rem;
+            padding: 1rem;
+            width: 40rem;
+            border-radius: 5px;
+            border: none;
+            // background: #eee;
+            border: 2px solid $primary-color;
+            outline: none;
+        }
+
+        button {
+            cursor: pointer;
+            background: $primary-color;
+            color: #fff;
+            padding: 1.5rem 2.5rem;
+            border: none;
+            border-radius: 25px;
+            margin-right: 12rem;
+            transition: all .2s;
+            outline: none;
+
+            &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10rem 20rem rgba($color-black, .2);
+            }
+        }
+    }
+
+    &__data {
+        position: absolute;
+        background: $primary-color;
+        width: 25rem;
+        flex: 1;
+        // margin-top: 2rem;
+        border-radius: 2px;
+        padding: 2.5rem 2rem;
+        height: 37rem;
+        margin-left: 8rem;
+        box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
+        
+        h2 {
+            color: #fff;
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+        &--item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        &--list {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            height: 15rem;
+            // background: chartreuse;
+            justify-content: space-around;
+        }
+
+        &--icon {
+            width: 2rem;
+            height: 2rem;
+            margin-right: .7rem;
+            fill: #fff;
+        }
     }
 }
 

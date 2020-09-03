@@ -73,13 +73,13 @@ input[type="checkbox"] {
     &,
     &:link {
         text-decoration: none;
-        padding: .5rem 1.2rem;
+        padding: .6rem 1.2rem;
         display: inline-block;
         border-radius: 10rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         transition: all .2s;
         position: relative;
-
+        font-family: "Lato", sans-serif;
         border: none;
         cursor: pointer;
     }

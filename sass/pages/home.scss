@@ -4,8 +4,8 @@
     height: 115vh;
     background-image: linear-gradient(
         to right top, 
-        rgba($color-grey-dark-2, 0.8), 
-        rgba($color-grey-dark-3, 0.8)), 
+        rgba(#999, 0.8), 
+        rgba(#333, 0.8)), 
         url(../img/partner-land.jpg);
     background-size: cover;
     // background-position: top;
@@ -13,7 +13,7 @@
     @include respond(phone) {
         height: 95vh;
         
-     }
+    }
     
 
     &:before {
@@ -29,8 +29,7 @@
 
         @include respond(phone) {
             height: 95vh;
-            
-         }
+        }
     }
 }
 
@@ -55,6 +54,10 @@
             font-size: 2rem;
             margin-top: 1rem;
             color: #eee;
+        }
+
+        @include respond(phone) {
+            display: none;
         }
     }
 }
@@ -179,6 +182,10 @@
     &__container {
         display: grid;
         grid-template-columns: auto auto;
+
+        @include respond(phone) {
+            grid-template-columns: auto;
+        }
     }
 
     &__item {
@@ -186,6 +193,10 @@
         justify-content: center;
         align-items: center;
         margin: 3rem 0rem;
+
+        @include respond(phone) {
+            grid-template-columns: auto;
+        }
     }
 
     &__texts {
@@ -219,19 +230,45 @@
     &__item {
         width: 60%;
         margin: 2rem auto;
+        
 
 
         h2 {
             font-size: 2rem;
             text-align: start;
-            margin-left: .5rem;
+            margin-left: .2rem;
         }
 
         p {
             font-size: 1.6rem;
             text-align: start;
+            margin-bottom: 2rem;
+        }
+
+        &--child {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            font-size: 1.5rem;
+            margin-left: 2rem;
+
+            @include respond(phone) {
+                display: block;
+                margin-left: 0rem;
+                margin-top: .5rem;
+            }
+            
+        }
+
+        &--icon {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1rem;
+            fill: $color-green-primary;
         }
     }
+
+    
 }
 
 // Contact
@@ -239,13 +276,28 @@
     padding: 10rem 0;
     margin: auto;
     width: 110rem;
+
+    @include respond(tab-port) {
+        width: 80rem;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+        // margin: 0rem .5rem;
+    }
+
     
+
+    
+
+
+    
+
 
     &__flex {
         display: flex;
         align-items: center;
         // flex-direction: row;   
-        
     }
 
     &__form {
@@ -256,21 +308,42 @@
         margin: auto;
         border-radius: 5px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+        @include respond(tab-port) {
+            flex: 0 0 80%;
+        }
         
         
         form {
             margin-left: 22rem;
+
+            @include respond(tab-port) {
+                margin-left: 15rem;
+            }
+
+            @include respond(phone) {
+                margin-left: 0rem;
+            }
         }
 
-        h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
+       
+        
     }
 
     &__group {
         margin: 1rem 0rem;
+
+        h2 {
+            // text-align: center;
+           
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+           
+            @include respond(phone) {
+               text-align: center;
+            }
+        
+        }
 
         label {
             display: block;
@@ -285,18 +358,40 @@
             outline: none;
             width: 40rem;
             border-bottom: 2px solid $primary-color;
+
+           
+
+            @include respond(phone) {
+                width: 39rem;
+            }
+
+            @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+                width: 36rem;
+            }
+
+            
+
+            // @include respond(tab-port) {
+            //     width: 25rem;
+            // }
         }
 
         textarea {
             font-family: "Lato", sans-serif;
+            font-size: 1.5rem;
             margin-top: 2rem;
             padding: 1rem;
             width: 40rem;
-            border-radius: 5px;
+            border-radius: 2px;
             border: none;
-            // background: #eee;
-            border: 2px solid $primary-color;
+            background: whitesmoke;
+            color: #333;
+            box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
             outline: none;
+
+            @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+                width: 36rem;
+            }
         }
 
         button {
@@ -309,6 +404,11 @@
             margin-right: 12rem;
             transition: all .2s;
             outline: none;
+
+            @include respond(phone) {
+                text-align: center;
+                margin-right: 0rem;
+            }
 
             &:hover {
                 transform: translateY(-3px);
@@ -329,6 +429,15 @@
         margin-left: 8rem;
         box-shadow: 0 -1px 0 #e5e5e5,0 0 2px rgba(0,0,0,.12),0 2px 4px rgba(0,0,0,.24);
         
+        @include respond(tab-port) {
+            margin-left: -3rem;
+        }
+
+        @include respond(phone) {
+            display: none;
+        }
+
+
         h2 {
             color: #fff;
             font-size: 1.8rem;

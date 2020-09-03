@@ -2997,6 +2997,9 @@ div.change div.hiddendiv ul.opere li {
       font-size: 2rem;
       margin-top: 1rem;
       color: #eee; }
+    @media (max-width: 37.5em) {
+      .landpage__desc {
+        display: none; } }
 
 .section-login {
   height: 100vh;
@@ -3067,12 +3070,18 @@ div.change div.hiddendiv ul.opere li {
 .work__container {
   display: grid;
   grid-template-columns: auto auto; }
+  @media (max-width: 37.5em) {
+    .work__container {
+      grid-template-columns: auto; } }
 
 .work__item {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 3rem 0rem; }
+  @media (max-width: 37.5em) {
+    .work__item {
+      grid-template-columns: auto; } }
 
 .work__texts {
   flex: 0 0 60%; }
@@ -3097,15 +3106,38 @@ div.change div.hiddendiv ul.opere li {
   .pay__item h2 {
     font-size: 2rem;
     text-align: start;
-    margin-left: .5rem; }
+    margin-left: .2rem; }
   .pay__item p {
     font-size: 1.6rem;
-    text-align: start; }
+    text-align: start;
+    margin-bottom: 2rem; }
+  .pay__item--child {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 1.5rem;
+    margin-left: 2rem; }
+    @media (max-width: 37.5em) {
+      .pay__item--child {
+        display: block;
+        margin-left: 0rem;
+        margin-top: .5rem; } }
+  .pay__item--icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    fill: #55c57a; }
 
 .contact {
   padding: 10rem 0;
   margin: auto;
   width: 110rem; }
+  @media (max-width: 56.25em) {
+    .contact {
+      width: 80rem; } }
+  @media (max-width: 37.5em) {
+    .contact {
+      width: 100%; } }
   .contact__flex {
     display: flex;
     align-items: center; }
@@ -3117,14 +3149,25 @@ div.change div.hiddendiv ul.opere li {
     margin: auto;
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    @media (max-width: 56.25em) {
+      .contact__form {
+        flex: 0 0 80%; } }
     .contact__form form {
       margin-left: 22rem; }
-    .contact__form h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 1.5rem; }
+      @media (max-width: 56.25em) {
+        .contact__form form {
+          margin-left: 15rem; } }
+      @media (max-width: 37.5em) {
+        .contact__form form {
+          margin-left: 0rem; } }
   .contact__group {
     margin: 1rem 0rem; }
+    .contact__group h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem; }
+      @media (max-width: 37.5em) {
+        .contact__group h2 {
+          text-align: center; } }
     .contact__group label {
       display: block;
       font-size: 1.4rem; }
@@ -3136,15 +3179,27 @@ div.change div.hiddendiv ul.opere li {
       outline: none;
       width: 40rem;
       border-bottom: 2px solid #2998ff; }
+      @media (max-width: 37.5em) {
+        .contact__group input {
+          width: 39rem; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        .contact__group input {
+          width: 36rem; } }
     .contact__group textarea {
       font-family: "Lato", sans-serif;
+      font-size: 1.5rem;
       margin-top: 2rem;
       padding: 1rem;
       width: 40rem;
-      border-radius: 5px;
+      border-radius: 2px;
       border: none;
-      border: 2px solid #2998ff;
+      background: whitesmoke;
+      color: #333;
+      box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
       outline: none; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+        .contact__group textarea {
+          width: 36rem; } }
     .contact__group button {
       cursor: pointer;
       background: #2998ff;
@@ -3155,6 +3210,10 @@ div.change div.hiddendiv ul.opere li {
       margin-right: 12rem;
       transition: all .2s;
       outline: none; }
+      @media (max-width: 37.5em) {
+        .contact__group button {
+          text-align: center;
+          margin-right: 0rem; } }
       .contact__group button:hover {
         transform: translateY(-3px);
         box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.2); }
@@ -3168,6 +3227,12 @@ div.change div.hiddendiv ul.opere li {
     height: 37rem;
     margin-left: 8rem;
     box-shadow: 0 -1px 0 #e5e5e5, 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24); }
+    @media (max-width: 56.25em) {
+      .contact__data {
+        margin-left: -3rem; } }
+    @media (max-width: 37.5em) {
+      .contact__data {
+        display: none; } }
     .contact__data h2 {
       color: #fff;
       font-size: 1.8rem; }
